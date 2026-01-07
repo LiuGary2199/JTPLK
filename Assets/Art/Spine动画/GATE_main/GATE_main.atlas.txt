@@ -1,0 +1,125 @@
+
+GATE_main.png
+size: 2400,584
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Ball_1
+  rotate: true
+  xy: 2305, 251
+  size: 84, 85
+  orig: 88, 89
+  offset: 2, 2
+  index: -1
+Gate_L
+  rotate: true
+  xy: 1915, 323
+  size: 258, 244
+  orig: 260, 246
+  offset: 1, 1
+  index: -1
+Gate_L_side
+  rotate: true
+  xy: 1084, 21
+  size: 273, 259
+  orig: 278, 264
+  offset: 2, 3
+  index: -1
+Gate_R
+  rotate: false
+  xy: 2161, 337
+  size: 216, 244
+  orig: 218, 246
+  offset: 1, 1
+  index: -1
+Gate_R_side
+  rotate: false
+  xy: 1681, 322
+  size: 232, 259
+  orig: 236, 264
+  offset: 2, 3
+  index: -1
+Main_1
+  rotate: false
+  xy: 2, 3
+  size: 1080, 578
+  orig: 1082, 611
+  offset: 1, 30
+  index: -1
+Main_2
+  rotate: false
+  xy: 1345, 32
+  size: 615, 262
+  orig: 618, 264
+  offset: 2, 1
+  index: -1
+SlotsBG_1
+  rotate: false
+  xy: 1084, 296
+  size: 595, 285
+  orig: 602, 291
+  offset: 3, 3
+  index: -1
+SlotsIcon_1
+  rotate: false
+  xy: 2276, 2
+  size: 102, 103
+  orig: 106, 107
+  offset: 2, 2
+  index: -1
+SlotsIcon_2
+  rotate: false
+  xy: 2276, 2
+  size: 102, 103
+  orig: 106, 107
+  offset: 2, 2
+  index: -1
+SlotsIcon_3
+  rotate: false
+  xy: 2276, 2
+  size: 102, 103
+  orig: 106, 107
+  offset: 2, 2
+  index: -1
+arrow_L
+  rotate: false
+  xy: 1962, 72
+  size: 104, 123
+  orig: 104, 123
+  offset: 0, 0
+  index: -1
+arrow_L_Back
+  rotate: false
+  xy: 2068, 74
+  size: 102, 121
+  orig: 104, 123
+  offset: 1, 1
+  index: -1
+arrow_L_Shadow
+  rotate: true
+  xy: 2161, 211
+  size: 124, 142
+  orig: 135, 152
+  offset: 5, 5
+  index: -1
+arrow_R
+  rotate: false
+  xy: 2172, 88
+  size: 102, 121
+  orig: 104, 123
+  offset: 1, 1
+  index: -1
+arrow_R_Back
+  rotate: true
+  xy: 2276, 107
+  size: 102, 121
+  orig: 104, 123
+  offset: 1, 1
+  index: -1
+arrow_R_Shadow
+  rotate: true
+  xy: 1962, 197
+  size: 124, 142
+  orig: 134, 152
+  offset: 5, 5
+  index: -1

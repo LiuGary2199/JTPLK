@@ -1,0 +1,291 @@
+
+skeleton.png
+size: 1873,1699
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2bei
+  rotate: true
+  xy: 2, 1315
+  size: 296, 301
+  orig: 320, 320
+  offset: 11, 3
+  index: -1
+hd
+  rotate: false
+  xy: 1711, 1540
+  size: 160, 157
+  orig: 160, 157
+  offset: 0, 0
+  index: -1
+huo/fire_00000
+  rotate: false
+  xy: 992, 1607
+  size: 95, 90
+  orig: 120, 120
+  offset: 15, 16
+  index: -1
+huo/fire_00001
+  rotate: false
+  xy: 671, 1608
+  size: 101, 89
+  orig: 120, 120
+  offset: 13, 17
+  index: -1
+huo/fire_00002
+  rotate: false
+  xy: 774, 1608
+  size: 107, 89
+  orig: 120, 120
+  offset: 10, 17
+  index: -1
+huo/fire_00003
+  rotate: false
+  xy: 450, 1610
+  size: 109, 87
+  orig: 120, 120
+  offset: 9, 18
+  index: -1
+huo/fire_00004
+  rotate: false
+  xy: 338, 1611
+  size: 110, 86
+  orig: 120, 120
+  offset: 8, 18
+  index: -1
+huo/fire_00005
+  rotate: false
+  xy: 226, 1613
+  size: 110, 84
+  orig: 120, 120
+  offset: 8, 19
+  index: -1
+huo/fire_00006
+  rotate: false
+  xy: 114, 1615
+  size: 110, 82
+  orig: 120, 120
+  offset: 8, 20
+  index: -1
+huo/fire_00007
+  rotate: false
+  xy: 2, 1616
+  size: 110, 81
+  orig: 120, 120
+  offset: 8, 21
+  index: -1
+huo/fire_00008
+  rotate: false
+  xy: 561, 1610
+  size: 108, 87
+  orig: 120, 120
+  offset: 9, 18
+  index: -1
+huo/fire_00009
+  rotate: false
+  xy: 883, 1608
+  size: 107, 89
+  orig: 120, 120
+  offset: 10, 17
+  index: -1
+huo/fire_00010
+  rotate: false
+  xy: 1187, 1606
+  size: 106, 91
+  orig: 120, 120
+  offset: 10, 16
+  index: -1
+huo/fire_00011
+  rotate: false
+  xy: 1295, 1606
+  size: 105, 91
+  orig: 120, 120
+  offset: 10, 16
+  index: -1
+huo/fire_00012
+  rotate: false
+  xy: 1402, 1606
+  size: 103, 91
+  orig: 120, 120
+  offset: 11, 16
+  index: -1
+huo/fire_00013
+  rotate: false
+  xy: 1507, 1606
+  size: 102, 91
+  orig: 120, 120
+  offset: 12, 16
+  index: -1
+huo/fire_00014
+  rotate: false
+  xy: 1611, 1606
+  size: 98, 91
+  orig: 120, 120
+  offset: 14, 16
+  index: -1
+huo/fire_00015
+  rotate: false
+  xy: 1089, 1607
+  size: 96, 90
+  orig: 120, 120
+  offset: 15, 16
+  index: -1
+huo_00003
+  rotate: false
+  xy: 305, 1118
+  size: 520, 488
+  orig: 520, 520
+  offset: 0, 7
+  index: -1
+huo_00004
+  rotate: false
+  xy: 524, 595
+  size: 520, 509
+  orig: 520, 520
+  offset: 0, 11
+  index: -1
+huo_00005
+  rotate: false
+  xy: 2, 615
+  size: 520, 501
+  orig: 520, 520
+  offset: 0, 19
+  index: -1
+huo_00006
+  rotate: false
+  xy: 827, 1106
+  size: 520, 498
+  orig: 520, 520
+  offset: 0, 22
+  index: -1
+huo_00007
+  rotate: false
+  xy: 1349, 1038
+  size: 520, 500
+  orig: 520, 520
+  offset: 0, 20
+  index: -1
+huo_00008
+  rotate: false
+  xy: 1046, 524
+  size: 520, 512
+  orig: 520, 520
+  offset: 0, 8
+  index: -1
+huo_00009
+  rotate: false
+  xy: 524, 73
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00010
+  rotate: false
+  xy: 1046, 2
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00014
+  rotate: false
+  xy: 2, 96
+  size: 520, 517
+  orig: 520, 520
+  offset: 0, 3
+  index: -1
+
+skeleton2.png
+size: 1568,1568
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huo_00011
+  rotate: false
+  xy: 2, 1046
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00012
+  rotate: false
+  xy: 2, 524
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00013
+  rotate: false
+  xy: 524, 1046
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00015
+  rotate: false
+  xy: 2, 2
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00016
+  rotate: false
+  xy: 524, 524
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00017
+  rotate: false
+  xy: 1046, 1046
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00018
+  rotate: false
+  xy: 524, 2
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00019
+  rotate: false
+  xy: 1046, 524
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00020
+  rotate: false
+  xy: 1046, 2
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+
+skeleton3.png
+size: 1568,524
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+huo_00021
+  rotate: false
+  xy: 2, 2
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00022
+  rotate: false
+  xy: 524, 2
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1
+huo_00023
+  rotate: false
+  xy: 1046, 2
+  size: 520, 520
+  orig: 520, 520
+  offset: 0, 0
+  index: -1

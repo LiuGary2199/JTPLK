@@ -1,0 +1,75 @@
+{
+    "ConfigInfo": [
+        {
+            "Key": "本配置文件说明"
+        },
+        {
+            "Key": "RoomCigar",
+            "Value": "UIPanel\\RoomCigar"
+        },
+        {
+            "Key": "PavlovaCigar",
+            "Value": "UIPanel\\PavlovaCigar"
+        },
+        {
+            "Key": "Exalt",
+            "Value": "UIPanel\\Exalt"
+        },
+        {
+            "Key": "OnlyUpCigar",
+            "Value": "UIPanel\\OnlyUpCigar"
+        },
+        {
+            "Key": "MethaneUnlessCigar",
+            "Value": "UIPanel\\MethaneUnlessCigar"
+        },
+        {
+            "Key": "TingeCigar",
+            "Value": "UIPanel\\TingeCigar"
+        },
+        {
+            "Key": "BatDayCigar",
+            "Value": "UIPanel\\BatDayCigar"
+        },
+        {
+            "Key": "SwimHoleRoomCigar",
+            "Value": "UIPanel\\SwimHoleRoomCigar"
+        },
+        {
+            "Key": "SwimHoleUnlessCigar",
+            "Value": "UIPanel\\SwimHoleUnlessCigar"
+        },
+        {
+            "Key": "RatHoleCigar",
+            "Value": "UIPanel\\RatHoleCigar"
+        },
+        {
+            "Key": "UnlessCigar",
+            "Value": "UIPanel\\UnlessCigar"
+        },
+        {
+            "Key": "SurmiseCigar",
+            "Value": "UIPanel\\SurmiseCigar"
+        },
+        {
+            "Key": "ReactCigar",
+            "Value": "UIPanel\\ReactCigar"
+        },
+        {
+            "Key": "MothDewCigar",
+            "Value": "UIPanel\\MothDewCigar"
+        },
+        {
+            "Key": "CargoCigar",
+            "Value": "UIPanel\\CargoCigar"
+        },
+        {
+            "Key": "JT_CashOutPanel",
+            "Value": "UIPanel\\JT_CashOutPanel"
+        },
+        {
+            "Key": "InsertTips",
+            "Value": "UIPanel\\InsertTips"
+        }
+    ]
+}

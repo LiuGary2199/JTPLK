@@ -1,0 +1,90 @@
+
+skeleton.png
+size: 86,542
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+00
+  rotate: true
+  xy: 40, 512
+  size: 28, 37
+  orig: 34, 44
+  offset: 3, 3
+  index: -1
+01
+  rotate: true
+  xy: 2, 482
+  size: 28, 37
+  orig: 34, 44
+  offset: 3, 3
+  index: -1
+02
+  rotate: true
+  xy: 41, 482
+  size: 28, 37
+  orig: 34, 44
+  offset: 2, 3
+  index: -1
+03
+  rotate: true
+  xy: 2, 452
+  size: 28, 37
+  orig: 34, 44
+  offset: 2, 3
+  index: -1
+04
+  rotate: true
+  xy: 2, 513
+  size: 27, 36
+  orig: 34, 44
+  offset: 3, 3
+  index: -1
+05
+  rotate: true
+  xy: 41, 452
+  size: 28, 37
+  orig: 34, 44
+  offset: 3, 3
+  index: -1
+Collider_Bomb
+  rotate: true
+  xy: 2, 383
+  size: 67, 75
+  orig: 300, 300
+  offset: 117, 109
+  index: -1
+Collider_Bomb_2
+  rotate: true
+  xy: 2, 95
+  size: 72, 80
+  orig: 300, 300
+  offset: 114, 107
+  index: -1
+Collider_Bomb_3
+  rotate: true
+  xy: 2, 242
+  size: 69, 78
+  orig: 300, 300
+  offset: 116, 108
+  index: -1
+Collider_Bomb_4
+  rotate: true
+  xy: 2, 169
+  size: 71, 79
+  orig: 300, 300
+  offset: 115, 107
+  index: -1
+Collider_Bomb_5
+  rotate: false
+  xy: 2, 2
+  size: 82, 91
+  orig: 300, 300
+  offset: 109, 101
+  index: -1
+lrj_10113_tex_05
+  rotate: false
+  xy: 2, 313
+  size: 68, 68
+  orig: 79, 80
+  offset: 6, 6
+  index: -1

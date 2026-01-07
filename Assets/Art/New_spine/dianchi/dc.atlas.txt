@@ -1,0 +1,41 @@
+
+dc.png
+size: 802,221
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2222
+  rotate: true
+  xy: 670, 13
+  size: 102, 96
+  orig: 102, 96
+  offset: 0, 0
+  index: -1
+33333
+  rotate: true
+  xy: 670, 117
+  size: 102, 130
+  orig: 102, 130
+  offset: 0, 0
+  index: -1
+4444
+  rotate: false
+  xy: 306, 2
+  size: 238, 217
+  orig: 291, 323
+  offset: 28, 58
+  index: -1
+dc
+  rotate: false
+  xy: 546, 16
+  size: 122, 203
+  orig: 126, 205
+  offset: 2, 1
+  index: -1
+light
+  rotate: true
+  xy: 2, 22
+  size: 197, 302
+  orig: 220, 325
+  offset: 11, 12
+  index: -1

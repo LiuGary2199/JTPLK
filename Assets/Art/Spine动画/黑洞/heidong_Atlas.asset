@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea535fc947da3884498bc81a155053eb, type: 3}
+  m_Name: heidong_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: f96b7143c9ff3694eb0a812104652688, type: 3}
+  materials:
+  - {fileID: 2100000, guid: f46d659befa36294bb7f083f68af24b6, type: 2}

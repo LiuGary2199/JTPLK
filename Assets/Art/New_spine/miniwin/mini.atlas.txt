@@ -1,0 +1,167 @@
+
+mini.png
+size: 1419,788
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+UI_Coin
+  rotate: false
+  xy: 2, 86
+  size: 644, 429
+  orig: 644, 429
+  offset: 0, 0
+  index: -1
+a/a_00000
+  rotate: false
+  xy: 1337, 164
+  size: 69, 51
+  orig: 296, 96
+  offset: 20, 13
+  index: -1
+a/a_00001
+  rotate: true
+  xy: 1130, 582
+  size: 87, 51
+  orig: 296, 96
+  offset: 20, 13
+  index: -1
+a/a_00002
+  rotate: false
+  xy: 546, 32
+  size: 96, 52
+  orig: 296, 96
+  offset: 20, 12
+  index: -1
+a/a_00003
+  rotate: false
+  xy: 1196, 56
+  size: 121, 52
+  orig: 296, 96
+  offset: 21, 12
+  index: -1
+a/a_00004
+  rotate: false
+  xy: 1197, 163
+  size: 138, 52
+  orig: 296, 96
+  offset: 22, 12
+  index: -1
+a/a_00005
+  rotate: false
+  xy: 1197, 110
+  size: 124, 51
+  orig: 296, 96
+  offset: 50, 13
+  index: -1
+a/a_00006
+  rotate: false
+  xy: 988, 618
+  size: 140, 51
+  orig: 296, 96
+  offset: 62, 13
+  index: -1
+a/a_00007
+  rotate: false
+  xy: 988, 565
+  size: 135, 51
+  orig: 296, 96
+  offset: 85, 13
+  index: -1
+a/a_00008
+  rotate: false
+  xy: 147, 33
+  size: 136, 51
+  orig: 296, 96
+  offset: 96, 13
+  index: -1
+a/a_00009
+  rotate: false
+  xy: 285, 33
+  size: 129, 51
+  orig: 296, 96
+  offset: 128, 13
+  index: -1
+a/a_00010
+  rotate: false
+  xy: 2, 33
+  size: 143, 51
+  orig: 296, 96
+  offset: 135, 13
+  index: -1
+a/a_00011
+  rotate: false
+  xy: 416, 33
+  size: 128, 51
+  orig: 296, 96
+  offset: 159, 13
+  index: -1
+a/a_00012
+  rotate: false
+  xy: 1196, 3
+  size: 115, 51
+  orig: 296, 96
+  offset: 172, 13
+  index: -1
+a/a_00013
+  rotate: false
+  xy: 1323, 58
+  size: 94, 51
+  orig: 296, 96
+  offset: 193, 13
+  index: -1
+a/a_00014
+  rotate: false
+  xy: 1337, 111
+  size: 77, 51
+  orig: 296, 96
+  offset: 210, 13
+  index: -1
+a/a_00015
+  rotate: true
+  xy: 988, 518
+  size: 45, 51
+  orig: 296, 96
+  offset: 242, 13
+  index: -1
+feichuan
+  rotate: false
+  xy: 2, 517
+  size: 984, 269
+  orig: 984, 665
+  offset: 0, 1
+  index: -1
+g
+  rotate: false
+  xy: 648, 2
+  size: 546, 127
+  orig: 548, 130
+  offset: 2, 1
+  index: -1
+light
+  rotate: false
+  xy: 648, 131
+  size: 547, 384
+  orig: 560, 398
+  offset: 5, 0
+  index: -1
+lrj_10113_tex_26
+  rotate: false
+  xy: 1197, 217
+  size: 205, 205
+  orig: 205, 205
+  offset: 0, 0
+  index: -1
+p
+  rotate: false
+  xy: 988, 671
+  size: 428, 115
+  orig: 431, 118
+  offset: 2, 2
+  index: -1
+xiangsu
+  rotate: true
+  xy: 1197, 424
+  size: 245, 198
+  orig: 560, 398
+  offset: 150, 29
+  index: -1

@@ -1,0 +1,41 @@
+
+zp.png
+size: 285,157
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg
+  rotate: true
+  xy: 221, 8
+  size: 66, 62
+  orig: 111, 84
+  offset: 36, 11
+  index: -1
+di
+  rotate: false
+  xy: 146, 2
+  size: 73, 72
+  orig: 83, 87
+  offset: 7, 6
+  index: -1
+haun
+  rotate: false
+  xy: 230, 106
+  size: 51, 49
+  orig: 73, 72
+  offset: 11, 11
+  index: -1
+quan_00
+  rotate: false
+  xy: 2, 13
+  size: 142, 142
+  orig: 142, 144
+  offset: 0, 1
+  index: -1
+theme10129_pop_fg_mini_003
+  rotate: true
+  xy: 146, 76
+  size: 79, 82
+  orig: 87, 88
+  offset: 7, 0
+  index: -1

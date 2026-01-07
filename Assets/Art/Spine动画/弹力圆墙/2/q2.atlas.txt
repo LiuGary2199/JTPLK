@@ -1,0 +1,139 @@
+
+q2.png
+size: 1622,1598
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fire/cank_00000
+  rotate: false
+  xy: 1120, 831
+  size: 500, 253
+  orig: 500, 300
+  offset: 0, 29
+  index: -1
+fire/cank_00001
+  rotate: false
+  xy: 1120, 576
+  size: 500, 253
+  orig: 500, 300
+  offset: 0, 29
+  index: -1
+fire/cank_00002
+  rotate: false
+  xy: 116, 821
+  size: 500, 254
+  orig: 500, 300
+  offset: 0, 28
+  index: -1
+fire/cank_00003
+  rotate: false
+  xy: 618, 1085
+  size: 500, 254
+  orig: 500, 300
+  offset: 0, 28
+  index: -1
+fire/cank_00004
+  rotate: false
+  xy: 618, 1341
+  size: 500, 255
+  orig: 500, 300
+  offset: 0, 28
+  index: -1
+fire/cank_00005
+  rotate: false
+  xy: 1120, 1342
+  size: 500, 254
+  orig: 500, 300
+  offset: 0, 29
+  index: -1
+fire/cank_00006
+  rotate: false
+  xy: 116, 565
+  size: 500, 254
+  orig: 500, 300
+  offset: 0, 29
+  index: -1
+fire/cank_00007
+  rotate: false
+  xy: 618, 829
+  size: 500, 254
+  orig: 500, 300
+  offset: 0, 28
+  index: -1
+fire/cank_00008
+  rotate: true
+  xy: 2, 2
+  size: 500, 253
+  orig: 500, 300
+  offset: 0, 28
+  index: -1
+fire/cank_00009
+  rotate: true
+  xy: 257, 63
+  size: 500, 253
+  orig: 500, 300
+  offset: 0, 27
+  index: -1
+fire/cank_00010
+  rotate: false
+  xy: 1120, 1086
+  size: 500, 254
+  orig: 500, 300
+  offset: 0, 26
+  index: -1
+fire/cank_00011
+  rotate: false
+  xy: 116, 1337
+  size: 500, 259
+  orig: 500, 300
+  offset: 0, 24
+  index: -1
+fire/cank_00012
+  rotate: false
+  xy: 618, 573
+  size: 500, 254
+  orig: 500, 300
+  offset: 0, 26
+  index: -1
+fire/cank_00013
+  rotate: true
+  xy: 512, 63
+  size: 500, 252
+  orig: 500, 300
+  offset: 0, 28
+  index: -1
+fire/cank_00014
+  rotate: true
+  xy: 1021, 71
+  size: 500, 252
+  orig: 500, 300
+  offset: 0, 28
+  index: -1
+fire/cank_00015
+  rotate: true
+  xy: 1275, 74
+  size: 500, 252
+  orig: 500, 300
+  offset: 0, 28
+  index: -1
+fire/cank_00016
+  rotate: false
+  xy: 116, 1077
+  size: 500, 258
+  orig: 500, 300
+  offset: 0, 26
+  index: -1
+fire/cank_00017
+  rotate: true
+  xy: 766, 71
+  size: 500, 253
+  orig: 500, 300
+  offset: 0, 27
+  index: -1
+light_00000
+  rotate: false
+  xy: 2, 504
+  size: 112, 1092
+  orig: 122, 1133
+  offset: 5, 9
+  index: -1

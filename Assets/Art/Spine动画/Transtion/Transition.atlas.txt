@@ -1,0 +1,118 @@
+
+Transition.png
+size: 743,1025
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+axg_00000
+  rotate: false
+  xy: 2, 684
+  size: 339, 339
+  orig: 339, 339
+  offset: 0, 0
+  index: -1
+bbb
+  rotate: false
+  xy: 337, 678
+  size: 4, 4
+  orig: 4, 4
+  offset: 0, 0
+  index: -1
+ch_00000
+  rotate: false
+  xy: 2, 353
+  size: 333, 329
+  orig: 435, 338
+  offset: 53, 9
+  index: -1
+effect/guangyun
+  rotate: false
+  xy: 343, 692
+  size: 328, 331
+  orig: 328, 331
+  offset: 0, 0
+  index: -1
+g2_00007
+  rotate: false
+  xy: 2, 54
+  size: 299, 297
+  orig: 299, 297
+  offset: 0, 0
+  index: -1
+guangtu01
+  rotate: false
+  xy: 343, 495
+  size: 394, 195
+  orig: 394, 195
+  offset: 0, 0
+  index: -1
+hs
+  rotate: false
+  xy: 529, 2
+  size: 110, 73
+  orig: 127, 106
+  offset: 11, 8
+  index: -1
+jinbi
+  rotate: false
+  xy: 529, 77
+  size: 156, 162
+  orig: 200, 200
+  offset: 22, 19
+  index: -1
+lanse
+  rotate: false
+  xy: 596, 293
+  size: 92, 97
+  orig: 127, 106
+  offset: 11, 4
+  index: -1
+lvse
+  rotate: true
+  xy: 673, 802
+  size: 92, 64
+  orig: 127, 68
+  offset: 11, 4
+  index: -1
+qwe_00000
+  rotate: false
+  xy: 2, 4
+  size: 49, 48
+  orig: 49, 48
+  offset: 0, 0
+  index: -1
+sg_00000
+  rotate: false
+  xy: 303, 22
+  size: 224, 217
+  orig: 224, 217
+  offset: 0, 0
+  index: -1
+syc_0
+  rotate: true
+  xy: 673, 896
+  size: 127, 68
+  orig: 127, 68
+  offset: 0, 0
+  index: -1
+xingdian
+  rotate: false
+  xy: 697, 456
+  size: 38, 37
+  orig: 38, 37
+  offset: 0, 0
+  index: -1
+xx_00
+  rotate: false
+  xy: 596, 392
+  size: 99, 101
+  orig: 99, 101
+  offset: 0, 0
+  index: -1
+yh/yhh_12
+  rotate: false
+  xy: 337, 241
+  size: 257, 252
+  orig: 257, 252
+  offset: 0, 0
+  index: -1

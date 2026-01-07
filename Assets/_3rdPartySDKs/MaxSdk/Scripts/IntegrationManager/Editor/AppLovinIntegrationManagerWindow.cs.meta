@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ce919cd6bc976544eb38c4dd04d9b83c
+labels:
+- al_max
+- al_max_export_path-MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManagerWindow.cs
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

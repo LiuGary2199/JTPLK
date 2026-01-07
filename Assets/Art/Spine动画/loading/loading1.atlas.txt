@@ -1,0 +1,272 @@
+
+loading1.png
+size: 1955,1926
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1D
+  rotate: false
+  xy: 1806, 1453
+  size: 143, 152
+  orig: 150, 158
+  offset: 4, 3
+  index: -1
+1E
+  rotate: false
+  xy: 1806, 1607
+  size: 136, 160
+  orig: 142, 168
+  offset: 3, 4
+  index: -1
+1G
+  rotate: false
+  xy: 1798, 201
+  size: 154, 156
+  orig: 160, 162
+  offset: 3, 3
+  index: -1
+1L
+  rotate: true
+  xy: 1798, 71
+  size: 128, 152
+  orig: 135, 160
+  offset: 4, 4
+  index: -1
+1N
+  rotate: true
+  xy: 178, 2
+  size: 153, 165
+  orig: 160, 175
+  offset: 3, 4
+  index: -1
+2B
+  rotate: false
+  xy: 1270, 233
+  size: 172, 186
+  orig: 179, 192
+  offset: 4, 3
+  index: -1
+2C
+  rotate: true
+  xy: 345, 2
+  size: 153, 157
+  orig: 161, 163
+  offset: 4, 3
+  index: -1
+2E
+  rotate: true
+  xy: 1444, 168
+  size: 163, 194
+  orig: 170, 201
+  offset: 4, 4
+  index: -1
+2N
+  rotate: true
+  xy: 504, 3
+  size: 152, 155
+  orig: 159, 162
+  offset: 3, 4
+  index: -1
+2O
+  rotate: true
+  xy: 1640, 174
+  size: 157, 156
+  orig: 167, 163
+  offset: 5, 3
+  index: -1
+2U
+  rotate: false
+  xy: 1806, 1769
+  size: 147, 155
+  orig: 153, 162
+  offset: 3, 4
+  index: -1
+2bei
+  rotate: false
+  xy: 2, 473
+  size: 370, 376
+  orig: 400, 400
+  offset: 14, 4
+  index: -1
+ball
+  rotate: false
+  xy: 2, 7
+  size: 174, 206
+  orig: 174, 206
+  offset: 0, 0
+  index: -1
+circle3
+  rotate: false
+  xy: 2, 215
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+d
+  rotate: false
+  xy: 2, 1439
+  size: 1108, 485
+  orig: 1120, 497
+  offset: 6, 7
+  index: -1
+flare_2011
+  rotate: false
+  xy: 1244, 89
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+sg/saoguang_00000
+  rotate: true
+  xy: 651, 947
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00001
+  rotate: false
+  xy: 1112, 1633
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00002
+  rotate: true
+  xy: 853, 947
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00003
+  rotate: false
+  xy: 1112, 1431
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00004
+  rotate: false
+  xy: 1055, 1229
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00005
+  rotate: false
+  xy: 1055, 1027
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00006
+  rotate: true
+  xy: 1604, 1343
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00007
+  rotate: true
+  xy: 374, 359
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00008
+  rotate: false
+  xy: 1055, 825
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00009
+  rotate: true
+  xy: 1547, 851
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00010
+  rotate: true
+  xy: 576, 359
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00011
+  rotate: true
+  xy: 778, 455
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00012
+  rotate: false
+  xy: 980, 623
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00013
+  rotate: false
+  xy: 980, 421
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00014
+  rotate: true
+  xy: 1749, 851
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00015
+  rotate: false
+  xy: 260, 157
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00016
+  rotate: true
+  xy: 1472, 333
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00017
+  rotate: true
+  xy: 1674, 359
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00018
+  rotate: false
+  xy: 778, 219
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+sg/saoguang_00019
+  rotate: false
+  xy: 752, 17
+  size: 490, 200
+  orig: 500, 220
+  offset: 5, 10
+  index: -1
+tail_2
+  rotate: false
+  xy: 1112, 1835
+  size: 689, 89
+  orig: 689, 89
+  offset: 0, 0
+  index: -1
+球轨迹
+  rotate: false
+  xy: 2, 851
+  size: 647, 586
+  orig: 1082, 2342
+  offset: 281, 1289
+  index: -1

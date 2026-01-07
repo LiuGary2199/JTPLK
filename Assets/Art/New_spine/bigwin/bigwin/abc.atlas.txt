@@ -1,0 +1,146 @@
+
+abc.png
+size: 2017,777
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 1588, 483
+  size: 292, 388
+  orig: 310, 406
+  offset: 9, 9
+  index: -1
+2bei
+  rotate: false
+  xy: 1058, 135
+  size: 370, 376
+  orig: 400, 400
+  offset: 14, 4
+  index: -1
+Flash_lighe_b
+  rotate: true
+  xy: 1656, 58
+  size: 115, 126
+  orig: 320, 126
+  offset: 109, 0
+  index: -1
+UI_BigWin_Big​​​
+  rotate: false
+  xy: 1058, 513
+  size: 528, 262
+  orig: 530, 264
+  offset: 1, 1
+  index: -1
+UI_BigWin_Win​​​
+  rotate: true
+  xy: 1815, 38
+  size: 443, 194
+  orig: 445, 196
+  offset: 1, 1
+  index: -1
+deng1
+  rotate: false
+  xy: 1429, 76
+  size: 213, 50
+  orig: 218, 54
+  offset: 3, 2
+  index: -1
+deng10
+  rotate: true
+  xy: 1978, 521
+  size: 93, 35
+  orig: 101, 40
+  offset: 3, 2
+  index: -1
+deng11
+  rotate: false
+  xy: 1058, 19
+  size: 42, 15
+  orig: 46, 19
+  offset: 2, 2
+  index: -1
+deng12
+  rotate: false
+  xy: 1058, 2
+  size: 31, 15
+  orig: 35, 19
+  offset: 2, 2
+  index: -1
+deng2
+  rotate: false
+  xy: 1058, 36
+  size: 232, 47
+  orig: 237, 51
+  offset: 3, 2
+  index: -1
+deng3
+  rotate: false
+  xy: 1058, 85
+  size: 239, 48
+  orig: 243, 52
+  offset: 2, 2
+  index: -1
+deng4
+  rotate: false
+  xy: 1430, 128
+  size: 224, 45
+  orig: 228, 49
+  offset: 2, 2
+  index: -1
+deng5
+  rotate: false
+  xy: 1429, 26
+  size: 204, 48
+  orig: 208, 51
+  offset: 2, 1
+  index: -1
+deng6
+  rotate: true
+  xy: 1978, 616
+  size: 159, 20
+  orig: 164, 24
+  offset: 3, 2
+  index: -1
+deng7
+  rotate: true
+  xy: 2000, 639
+  size: 136, 15
+  orig: 140, 19
+  offset: 2, 2
+  index: -1
+deng8
+  rotate: false
+  xy: 1430, 490
+  size: 117, 21
+  orig: 122, 25
+  offset: 3, 2
+  index: -1
+deng9
+  rotate: true
+  xy: 1784, 69
+  size: 104, 25
+  orig: 109, 28
+  offset: 3, 1
+  index: -1
+flare_2011
+  rotate: false
+  xy: 1299, 5
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+jinbi
+  rotate: false
+  xy: 2, 11
+  size: 1054, 764
+  orig: 1056, 766
+  offset: 1, 1
+  index: -1
+lighk
+  rotate: true
+  xy: 1430, 175
+  size: 306, 383
+  orig: 310, 406
+  offset: 2, 23
+  index: -1

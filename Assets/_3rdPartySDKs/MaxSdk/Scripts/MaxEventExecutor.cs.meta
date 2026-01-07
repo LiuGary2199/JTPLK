@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 773b6322b21d93a4ca6ae8f107ada4ed
+labels:
+- al_max
+- al_max_export_path-MaxSdk/Scripts/MaxEventExecutor.cs
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

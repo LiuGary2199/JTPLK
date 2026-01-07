@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf115b55e5692f44b9f77b5b3a4b057, type: 3}
+  m_Name: AppLovinSettings
+  m_EditorClassIdentifier: 
+  qualityServiceEnabled: 1
+  sdkKey: LMmBFSE51WdkESTJtltpBCSg5i7E2oerHByZfuBmz0RH8sas13CuJ67hXd_Q5hDeJTUyhArd63GezDaRTOUC6U
+  setAttributionReportEndpoint: 0
+  customGradleVersionUrl: 
+  customGradleToolsVersion: 
+  adMobAndroidAppId: 
+  adMobIosAppId: 

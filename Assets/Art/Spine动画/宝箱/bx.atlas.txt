@@ -1,0 +1,83 @@
+
+bx.png
+size: 1350,793
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+light1
+  rotate: true
+  xy: 884, 2
+  size: 321, 327
+  orig: 373, 362
+  offset: 26, 24
+  index: -1
+light2
+  rotate: true
+  xy: 1213, 114
+  size: 220, 112
+  orig: 220, 112
+  offset: 0, 0
+  index: -1
+lv3_box
+  rotate: true
+  xy: 707, 325
+  size: 466, 198
+  orig: 516, 280
+  offset: 20, 47
+  index: -1
+lv3_top1
+  rotate: true
+  xy: 2, 310
+  size: 481, 247
+  orig: 516, 280
+  offset: 14, 16
+  index: -1
+lv3_top2
+  rotate: false
+  xy: 907, 336
+  size: 437, 238
+  orig: 516, 280
+  offset: 76, 9
+  index: -1
+lv3_top3
+  rotate: false
+  xy: 907, 576
+  size: 441, 215
+  orig: 516, 280
+  offset: 38, 32
+  index: -1
+lv4_box
+  rotate: true
+  xy: 496, 325
+  size: 466, 209
+  orig: 516, 280
+  offset: 20, 35
+  index: -1
+lv4_top1
+  rotate: true
+  xy: 251, 313
+  size: 478, 243
+  orig: 516, 280
+  offset: 15, 19
+  index: -1
+lv4_top2
+  rotate: false
+  xy: 2, 59
+  size: 437, 249
+  orig: 516, 280
+  offset: 77, 8
+  index: -1
+lv4_top3
+  rotate: false
+  xy: 441, 67
+  size: 441, 244
+  orig: 516, 280
+  offset: 37, 18
+  index: -1
+star
+  rotate: false
+  xy: 2, 16
+  size: 40, 41
+  orig: 49, 52
+  offset: 5, 6
+  index: -1

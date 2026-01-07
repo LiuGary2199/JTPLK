@@ -1,0 +1,34 @@
+
+qiang.png
+size: 951,374
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2bei
+  rotate: true
+  xy: 2, 2
+  size: 370, 376
+  orig: 400, 400
+  offset: 14, 4
+  index: -1
+Zha010
+  rotate: false
+  xy: 739, 149
+  size: 210, 223
+  orig: 256, 256
+  offset: 20, 16
+  index: -1
+g_04
+  rotate: false
+  xy: 739, 52
+  size: 96, 95
+  orig: 180, 160
+  offset: 41, 32
+  index: -1
+quan_00
+  rotate: true
+  xy: 380, 16
+  size: 356, 357
+  orig: 358, 357
+  offset: 1, 0
+  index: -1
