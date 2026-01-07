@@ -239,9 +239,9 @@ public class RoomCigar : SakeUIDaddy
         CargoSoupShoe();
 
         Humor = HomeRegain.GetComponentsInChildren<Home>().ToList();
-        HumorIgneousWine();
         for (int i = 0; i < Humor.Count; i++)
             Humor[i].transform.name = i.ToString();
+        HumorIgneousWine();
 
         Methane_UnlessNine[0] = GameConfig.Instance.CountReward(RewardType.Diamond, WedSoulHue.Instance._RoomIraq.collect_A_count, false);
         Methane_UnlessNine[1] = GameConfig.Instance.CountReward(RewardType.Diamond, WedSoulHue.Instance._RoomIraq.collect_B_count, false);
@@ -312,8 +312,8 @@ public class RoomCigar : SakeUIDaddy
                 RoomBeach();
                 PestGrecian.AshForecast().Novel(1, () =>
                 {
-                    React1();
-                    //Guide2();
+                    //React1();
+                    React2();
                     CellIraqGrecian.SetBool("IsGuideCashOut", true);
                 });
             }
@@ -453,8 +453,16 @@ public class RoomCigar : SakeUIDaddy
         {
             if ((i >= 7) && (i <= 12) || (i >= 20) && (i <= 25) || (i >= 33) && (i <= 38))
                 Humor[i].Wine(itemType);
-            else
-                Humor[i].Wine(ItemType.Coin);
+            else {
+                if (Humor[i].name == "3" && !ColumnStud.OnDaily() && !CellIraqGrecian.GetBool(CWinter.sv_zhuanpan_rot))
+                {
+                    Humor[i].Wine(ItemType.Wheel);
+                }
+                else
+                {
+                    Humor[i].Wine(ItemType.Coin);
+                }
+            }
         }
     }
 
@@ -1809,17 +1817,23 @@ public class RoomCigar : SakeUIDaddy
     #endregion
 
     #region 引导
-    void React1()
+    public void React1()
     {
-        MyRoomBeach();
         _ReactCigar = AnewUIPure(nameof(ReactCigar)).GetComponent<ReactCigar>();
        _ReactCigar.EvenBlue(_MothDewFiord.transform.parent);
         _ReactCigar.EvenSoul("Help you understand how to withdraw cash", -650);
         _ReactCigar.EvenAlso(new Vector2[] { _MothDewFiord.transform.parent.position });
+        _ReactCigar.EvenPostPig(() => {
+            _ReactCigar.Deep(false);
+            _ReactCigar = null;
+            WispyUIPure(nameof(ReactCigar));
+            AnewUIPure(nameof(JT_CashOutPanel)); 
+        });
     }
     public void React2()
     {
-
+       // MyRoomBeach();
+        _ReactCigar = AnewUIPure(nameof(ReactCigar)).GetComponent<ReactCigar>();
         _ReactCigar.EvenBlue_Round(new Vector2(0, -100), new Vector2(1000, 1300));
         _ReactCigar.EvenSoul("Click the circled area to place the ball", 820);
         _ReactCigar.EvenPostPig(() => { React3(); });

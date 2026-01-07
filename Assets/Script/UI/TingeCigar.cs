@@ -185,6 +185,12 @@ public class TingeCigar : SakeUIDaddy
     }
     WheelData AshUnlessDyRotate()
     {
+        if (!CellIraqGrecian.GetBool(CWinter.sv_zhuanpan_first))
+        {
+            Debug.Log("第一次转盘必中奖");
+            CellIraqGrecian.SetBool(CWinter.sv_zhuanpan_first, true);
+           return WedSoulHue.Instance._RoomIraq.wheel_list[0];
+        }
         WheelData[] Datas = WedSoulHue.Instance._RoomIraq.wheel_list.ToArray();
         int totalWeight = Datas.Sum(x => x.weight);
         int randomWeight = Random.Range(0, totalWeight);
@@ -262,6 +268,7 @@ public class TingeCigar : SakeUIDaddy
             Place2.DOKill();
 
             WispyUIPure(nameof(TingeCigar));
+            CellIraqGrecian.SetBool(CWinter.sv_zhuanpan_rot, true);
             RewardType Much = RewardType.Coin;
             if (DayIraq.type == "币")
                 Much = RewardType.Coin;
@@ -271,7 +278,16 @@ public class TingeCigar : SakeUIDaddy
                 Much = RewardType.Diamond;
             (UIGrecian.AshForecast().EvenUIDaddy(nameof(UnlessCigar)) as UnlessCigar).Wine(DayIraq.count, Much, true, () =>
             {
-                RoomCigar.Instance.MyRoomBeach();
+                if (!CellIraqGrecian.GetBool(CWinter.sv_zhuanpan_finish) && !ColumnStud.OnDaily())
+                {
+                    RoomCigar.Instance.RoomBeach();
+                    RoomCigar.Instance.React1();
+                    CellIraqGrecian.SetBool(CWinter.sv_zhuanpan_finish, true);
+                }
+                else
+                {
+                    RoomCigar.Instance.MyRoomBeach();
+                }
             }, "1013");
         });
     }

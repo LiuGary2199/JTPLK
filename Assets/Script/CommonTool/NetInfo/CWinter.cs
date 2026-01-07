@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 
  * 常量配置
  * 
@@ -112,7 +112,20 @@ public class CWinter
     /// 看广告总次数
     /// </summary>
     public const string Or_Pylon_So_Don= "sv_total_ad_num";
+    /// <summary>
+    /// 触发了一次转盘
+    /// </summary>
+    public const string sv_zhuanpan_rot = "sv_zhuanpan_rot";
 
+    /// <summary>
+    /// 触发了一次转盘
+    /// </summary>
+    public const string sv_zhuanpan_finish = "sv_zhuanpan_finish";
+
+        /// <summary>
+        /// 第一次转
+        /// </summary>
+    public const string sv_zhuanpan_first = "sv_zhuanpan_first";
     #endregion
 
     #region 监听发送的消息

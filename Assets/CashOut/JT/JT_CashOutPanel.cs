@@ -145,10 +145,7 @@ public class JT_CashOutPanel : SakeUIDaddy
     public void Close()
     {
         WispyUIPure(nameof(JT_CashOutPanel));
-        if (RoomCigar.Instance._ReactCigar != null)
-            RoomCigar.Instance.React2();
-        else
-            RoomCigar.Instance.MyRoomBeach();
+        RoomCigar.Instance.MyRoomBeach();
     }
 
     #region 页面切换
