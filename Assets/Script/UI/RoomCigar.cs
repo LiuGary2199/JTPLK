@@ -5,7 +5,6 @@ using Coffee.UIExtensions;
 using DG.Tweening;
 using Spine;
 using Spine.Unity;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -17,6 +16,8 @@ public class RoomCigar : SakeUIDaddy
     Camera _Weight;
 
     [Header("UI")]
+    public RectTransform top;
+    public RectTransform bottom;
 [UnityEngine.Serialization.FormerlySerializedAs("Bg")]    public Image He;
 [UnityEngine.Serialization.FormerlySerializedAs("GameZone")]    public Transform RoomWake;
 [UnityEngine.Serialization.FormerlySerializedAs("SetBtn")]    public Button GelPig;
@@ -38,8 +39,7 @@ public class RoomCigar : SakeUIDaddy
 [UnityEngine.Serialization.FormerlySerializedAs("TempDiamondText")]    public Text SaltMagentaDrug;
 [UnityEngine.Serialization.FormerlySerializedAs("SideUI")]    public Transform LieuUI; // 侧边UI
 [UnityEngine.Serialization.FormerlySerializedAs("m_CashBtn")]    public Button m_MothPig;
-[UnityEngine.Serialization.FormerlySerializedAs("cashitrmObj")]
-    public GameObject BirthdayDig;
+[UnityEngine.Serialization.FormerlySerializedAs("cashitrmObj")]    public GameObject BirthdayDig;
 [UnityEngine.Serialization.FormerlySerializedAs("jindu1rect")]    public RectTransform Horde1Rest;
 [UnityEngine.Serialization.FormerlySerializedAs("jindu2rect")]   public RectTransform Horde2Rest;
 [UnityEngine.Serialization.FormerlySerializedAs("jindu3rect")]    public RectTransform Horde3Rest;
@@ -277,12 +277,15 @@ public class RoomCigar : SakeUIDaddy
         {
 
             RoomWake.localPosition = new Vector2(0, -200);
-            //  _CashOutEnter.transform.parent.localScale = Vector3.one * .8f;
-            //  _CashOutEnter.transform.parent.localPosition = new Vector2(0, -741);
-            //   SetBtn.transform.localPosition = new Vector2(-432, 694);
-         //   TempMoneyBG.localPosition = new Vector2(0, -730);
-        }
+
+    //  _CashOutEnter.transform.parent.localScale = Vector3.one * .8f;
+    //  _CashOutEnter.transform.parent.localPosition = new Vector2(0, -741);
+    //   SetBtn.transform.localPosition = new Vector2(-432, 694);
+    //   TempMoneyBG.localPosition = new Vector2(0, -730);
+}
         else {
+            top.anchoredPosition = new Vector2(top.anchoredPosition.x, top.anchoredPosition.y - 50);
+            bottom.anchoredPosition = new Vector2(bottom.anchoredPosition.x, bottom.anchoredPosition.y + 50);
             Horde1Rest.anchoredPosition = new Vector2(Horde1Rest.anchoredPosition.x, Horde1Rest.anchoredPosition.y - 40);
          //   jindu2rect.anchoredPosition = new Vector2(jindu2rect.anchoredPosition.x, jindu2rect.anchoredPosition.y - 40);
           //  jindu3rect.anchoredPosition = new Vector2(jindu3rect.anchoredPosition.x, jindu3rect.anchoredPosition.y - 40);
