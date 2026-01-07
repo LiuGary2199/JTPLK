@@ -86,28 +86,28 @@ public class TingeCigar : SakeUIDaddy
         BigWheelItemData = BigWheelItemData.OrderBy(x => Random.value).ToArray();
         for (int i = 0; i < BatTingeHome.Length; i++)
         {
-            TextMeshProUGUI gameObject1 = BatTingeHome[i].Find("TMPCoin").GetComponent<TextMeshProUGUI>();
-            gameObject1.text = BigWheelItemData[i].count.ToString();
-            TextMeshProUGUI gameObject2 = BatTingeHome[i].Find("TMPCash").GetComponent<TextMeshProUGUI>();
-            gameObject2.text = BigWheelItemData[i].count.ToString();
-            TextMeshProUGUI gameObject3 = BatTingeHome[i].Find("TMPBall").GetComponent<TextMeshProUGUI>();
-            gameObject3.text = BigWheelItemData[i].count.ToString();
-            gameObject1.gameObject.SetActive(false);
-            gameObject2.gameObject.SetActive(false);
-            gameObject3.gameObject.SetActive(false);
+            TextMeshProUGUI textCoin = BatTingeHome[i].Find("TMPCoin").GetComponent<TextMeshProUGUI>();
+            textCoin.text = BigWheelItemData[i].count.ToString();
+            TextMeshProUGUI TxtCash = BatTingeHome[i].Find("TMPCash").GetComponent<TextMeshProUGUI>();
+            TxtCash.text = BigWheelItemData[i].count.ToString();
+            TextMeshProUGUI TextBall = BatTingeHome[i].Find("TMPBall").GetComponent<TextMeshProUGUI>();
+            TextBall.text = BigWheelItemData[i].count.ToString();
+            textCoin.gameObject.SetActive(false);
+            TxtCash.gameObject.SetActive(false);
+            TextBall.gameObject.SetActive(false);
             if (BigWheelItemData[i].type == "币")
             {
-                gameObject1.gameObject.SetActive(true);
+                textCoin.gameObject.SetActive(true);
                 BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Cape;
             }
             else if (BigWheelItemData[i].type == "球")
             {
-                gameObject3.gameObject.SetActive(true);
+                TextBall.gameObject.SetActive(true);
                 BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Hole;
             }
             else if (BigWheelItemData[i].type == "钻石")
             {
-                gameObject2.gameObject.SetActive(true);
+                TxtCash.gameObject.SetActive(true);
                 BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Magenta;
             }
             BatTingeHome[i].Find("Icon").GetComponent<Image>().SetNativeSize();
@@ -120,11 +120,11 @@ public class TingeCigar : SakeUIDaddy
         //假格子
         for (int i = 0; i < Gobi_BatTingeHome.Length; i++)
         {
-            TextMeshProUGUI gameObject1 = BatTingeHome[i].Find("TMPCoin").GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI gameObject1 = Gobi_BatTingeHome[i].Find("TMPCoin").GetComponent<TextMeshProUGUI>();
             gameObject1.text = BigWheelItemData[i].count.ToString();
-            TextMeshProUGUI gameObject2 = BatTingeHome[i].Find("TMPCash").GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI gameObject2 = Gobi_BatTingeHome[i].Find("TMPCash").GetComponent<TextMeshProUGUI>();
             gameObject2.text = BigWheelItemData[i].count.ToString();
-            TextMeshProUGUI gameObject3 = BatTingeHome[i].Find("TMPBall").GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI gameObject3 = Gobi_BatTingeHome[i].Find("TMPBall").GetComponent<TextMeshProUGUI>();
             gameObject3.text = BigWheelItemData[i].count.ToString();
 
             gameObject1.gameObject.SetActive(false);
@@ -134,17 +134,17 @@ public class TingeCigar : SakeUIDaddy
             if (BigWheelItemData[i].type == "币")
             {
                 gameObject1.gameObject.SetActive(true);
-                BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Cape;
+                Gobi_BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Cape;
             }
             else if (BigWheelItemData[i].type == "球")
             {
                 gameObject3.gameObject.SetActive(true);
-                BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Hole;
+                Gobi_BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Hole;
             }
             else if (BigWheelItemData[i].type == "钻石")
             {
                 gameObject2.gameObject.SetActive(true);
-                BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Magenta;
+                Gobi_BatTingeHome[i].Find("Icon").GetComponent<Image>().sprite = Magenta;
             }
             Gobi_BatTingeHome[i].Find("Icon").GetComponent<Image>().SetNativeSize();
         }
@@ -188,8 +188,12 @@ public class TingeCigar : SakeUIDaddy
         if (!CellIraqGrecian.GetBool(CWinter.sv_zhuanpan_first))
         {
             Debug.Log("第一次转盘必中奖");
-            CellIraqGrecian.SetBool(CWinter.sv_zhuanpan_first, true);
-           return WedSoulHue.Instance._RoomIraq.wheel_list[0];
+             WheelData  wheelData = new WheelData();
+            wheelData.type = "钻石";
+            wheelData.count = 100;
+            wheelData.weight = 0;
+           CellIraqGrecian.SetBool(CWinter.sv_zhuanpan_first, true);
+           return wheelData;
         }
         WheelData[] Datas = WedSoulHue.Instance._RoomIraq.wheel_list.ToArray();
         int totalWeight = Datas.Sum(x => x.weight);
@@ -280,9 +284,13 @@ public class TingeCigar : SakeUIDaddy
             {
                 if (!CellIraqGrecian.GetBool(CWinter.sv_zhuanpan_finish) && !ColumnStud.OnDaily())
                 {
-                    RoomCigar.Instance.RoomBeach();
-                    RoomCigar.Instance.React1();
-                    CellIraqGrecian.SetBool(CWinter.sv_zhuanpan_finish, true);
+                    PestGrecian.AshForecast().Novel(1.4f, () =>
+                    {
+                        RoomCigar.Instance.RoomBeach();
+                        RoomCigar.Instance.React1();
+                        CellIraqGrecian.SetBool(CWinter.sv_zhuanpan_finish, true);
+                    });
+                
                 }
                 else
                 {

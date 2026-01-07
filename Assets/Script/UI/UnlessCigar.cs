@@ -27,10 +27,27 @@ public class UnlessCigar : SakeUIDaddy
     Coroutine NovelEvenAshPig;
     string OnEverestAD;
     string NewlyID;
-
+    public Button firstDoublebtn;
     public TextMeshProUGUI TMPCash;
     void Start()
     {
+        firstDoublebtn.onClick.AddListener(() =>
+        {
+            ShootHue.AshForecast().NormButton(ShootMuch.UIMusic.click);
+            CellIraqGrecian.SetBool(CWinter.sv_getReaard_first, true);
+            OnEverestAD = "1";
+            firstDoublebtn.transform.localScale = Vector3.zero;
+            VisualizeConformity.FeebleGlassy(UnlessBuy, UnlessBuy * 2, 0, CapeDrug, null);
+            if (TMPCapeDrug)
+                VisualizeConformity.FeebleGlassyTMP(UnlessBuy, UnlessBuy * 2, 0, TMPCapeDrug, null);
+            if (TMPCash)
+                VisualizeConformity.FeebleGlassyTMP(UnlessBuy, UnlessBuy * 2, 0, TMPCash, null);
+            UnlessBuy *= 2;
+            PestGrecian.AshForecast().Novel(1.5f, () =>
+            {
+                AshUnlessSkyVastNewlySkyWispy();
+            });
+        });
         AshDataPig.onClick.AddListener(() =>
         {
             ShootHue.AshForecast().NormButton(ShootMuch.UIMusic.click);
@@ -95,6 +112,7 @@ public class UnlessCigar : SakeUIDaddy
     /// <param name="EventID"> 打点ID </param>
        public void Wine(float RewardNum, RewardType rewardType, bool IsAdDouble, UnityAction FinishEvent, string EventID)
     {
+        firstDoublebtn.transform.localScale = Vector3.zero;
         this.FrightNewly = FinishEvent;
         this.NewlyID = EventID;
         this.UnlessBuy = RewardNum;
@@ -142,21 +160,34 @@ public class UnlessCigar : SakeUIDaddy
             VisualizeConformity.FeebleGlassyTMP(0, RewardNum, 0.1f, TMPCash, null);
         }
 
-        if (IsAdDouble)
+       
+        if (!CellIraqGrecian.GetBool(CWinter.sv_getReaard_first)) 
         {
-            ToEnzymePig.transform.localScale = Vector3.one;
-            AshPig.transform.localScale = Vector3.one;
+            firstDoublebtn.transform.localScale = Vector3.one;
             ToTowPig.transform.localScale = Vector3.zero;
             AshDataPig.transform.localScale = Vector3.zero;
-        }
-        else
-        {
-            ToTowPig.transform.localScale = Vector3.one;
-            AshDataPig.transform.localScale = Vector3.one;
             ToEnzymePig.transform.localScale = Vector3.zero;
             AshPig.transform.localScale = Vector3.zero;
+        } 
+        else
+        {
+            if (IsAdDouble)
+            {
+                ToEnzymePig.transform.localScale = Vector3.one;
+                AshPig.transform.localScale = Vector3.one;
+                ToTowPig.transform.localScale = Vector3.zero;
+                AshDataPig.transform.localScale = Vector3.zero;
+            }
+            else
+            {
+                ToTowPig.transform.localScale = Vector3.one;
+                AshDataPig.transform.localScale = Vector3.one;
+                ToEnzymePig.transform.localScale = Vector3.zero;
+                AshPig.transform.localScale = Vector3.zero;
+            }
         }
-        Button.Play();
+
+            Button.Play();
         ShootHue.AshForecast().NormButton(ShootMuch.UIMusic.firework);
     }
 

@@ -1,4 +1,4 @@
-﻿using Coffee.UIExtensions;
+using Coffee.UIExtensions;
 using DG.Tweening;
 using Spine.Unity;
 using UnityEngine;
@@ -313,18 +313,18 @@ public class Home : MonoBehaviour
             UnlessBuy += TooUnlessBuy;
         if (CoinOrDiamond)
         {
-            if (ColumnStud.OnDaily())
-            {
-                RoomCigar.Instance.PitHomeMagenta(UnlessBuy, transform.position);
-            }
-            else
-            {
-                RoomCigar.Instance.PitHomeCape(UnlessBuy, transform.position);
-            }
+            RoomCigar.Instance.PitHomeCape(UnlessBuy, transform.position);
         }
         else 
         {
-            RoomCigar.Instance.PitHomeMagenta(UnlessBuy, transform.position);
+            if (ColumnStud.OnDaily())
+            {
+                RoomCigar.Instance.PitHomeCape(UnlessBuy, transform.position);
+            }
+            else
+            {
+                RoomCigar.Instance.PitHomeMagenta(UnlessBuy, transform.position);
+            }
         }
     }
 

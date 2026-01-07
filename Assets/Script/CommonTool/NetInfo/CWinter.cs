@@ -126,6 +126,11 @@ public class CWinter
         /// 第一次转
         /// </summary>
     public const string sv_zhuanpan_first = "sv_zhuanpan_first";
+
+    /// <summary>
+    /// 第一次 领奖
+    /// </summary>
+    public const string sv_getReaard_first = "sv_getReaard_first";
     #endregion
 
     #region 监听发送的消息

@@ -191,8 +191,15 @@ public class RoomCigar : SakeUIDaddy
                 RoomCigar.Instance._ReactCigar.Deep(false);
             UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel));
         });
-        //CapeBuy = CellIraqGrecian.GetInt("CoinNum");
-        CapeBuy =(int) ZJT_Manager.AshForecast().GetMoney("JT_Money2");
+        CapeBuy = 0;
+        if (ColumnStud.OnDaily())
+        {
+            CapeBuy = CellIraqGrecian.GetInt("CoinNum");
+        }
+        else
+        {
+            CapeBuy = (int)ZJT_Manager.AshForecast().GetMoney("JT_Money2");
+        }
         CapeDrug.text = CapeBuy.ToString();
 
         MothBuy = ZJT_Manager.AshForecast().GetMoney();
