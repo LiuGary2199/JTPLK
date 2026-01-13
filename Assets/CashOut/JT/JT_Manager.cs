@@ -459,6 +459,20 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
             return timeSpan.ToString(@"hh\:mm\:ss");
         }
     }
+    public string GetFormattedDurationStr(long totalSeconds)
+    {
+        System.TimeSpan duration = System.TimeSpan.FromSeconds(totalSeconds);
+        if (duration.TotalHours > 1)
+        {
+            return duration.ToString(@"hh\:mm\:ss");
+        }
+        else
+        {
+            return duration.ToString(@"mm\:ss");
+        }
+    }
+
+
 
     public string Translate(string key) //翻译
     {

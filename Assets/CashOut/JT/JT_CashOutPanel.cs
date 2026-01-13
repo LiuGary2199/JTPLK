@@ -101,6 +101,24 @@ public class JT_CashOutPanel : SakeUIDaddy
 
         //打开假提面板打点
         SashNewlyBroker.AshForecast().VastNewly("1401", JT_Manager.AshForecast().JT_Money1.ToString("F2"), JT_Manager.AshForecast().JT_Money2.ToString("F2"));
+        string page = "1";
+        try
+        {
+            page =OrPureDemise.ToString();
+            if (page == "1")
+            {
+                OnPageBtn(PageBtn_Cash);
+            }
+            else if (page == "2")
+            {
+                OnPageBtn(PageBtn_Exchange);
+            }
+        }
+        catch (System.Exception)
+        {
+
+            throw;
+        }
     }
     public override void Hidding()
     {

@@ -18,126 +18,129 @@ public class RoomCigar : SakeUIDaddy
     [Header("UI")]
     public RectTransform top;
     public RectTransform bottom;
-[UnityEngine.Serialization.FormerlySerializedAs("Bg")]    public Image He;
-[UnityEngine.Serialization.FormerlySerializedAs("GameZone")]    public Transform RoomWake;
-[UnityEngine.Serialization.FormerlySerializedAs("SetBtn")]    public Button GelPig;
-    [HideInInspector] [UnityEngine.Serialization.FormerlySerializedAs("CoinNum")]public int CapeBuy;
-    [HideInInspector] [UnityEngine.Serialization.FormerlySerializedAs("CashNum")]public float MothBuy;
-[UnityEngine.Serialization.FormerlySerializedAs("CoinIcon")]
+    public Button CoinEnter;
+    public Button CashEnter;
+    public Text CashTime;
+    [UnityEngine.Serialization.FormerlySerializedAs("Bg")] public Image He;
+    [UnityEngine.Serialization.FormerlySerializedAs("GameZone")] public Transform RoomWake;
+    [UnityEngine.Serialization.FormerlySerializedAs("SetBtn")] public Button GelPig;
+    [HideInInspector][UnityEngine.Serialization.FormerlySerializedAs("CoinNum")] public int CapeBuy;
+    [HideInInspector][UnityEngine.Serialization.FormerlySerializedAs("CashNum")] public float MothBuy;
+    [UnityEngine.Serialization.FormerlySerializedAs("CoinIcon")]
     public Transform CapeDarn;
-[UnityEngine.Serialization.FormerlySerializedAs("CoinText")]    public Text CapeDrug;
-[UnityEngine.Serialization.FormerlySerializedAs("CashText")]    public Text MothDrug;
-[UnityEngine.Serialization.FormerlySerializedAs("_CashOutEnter")]    public Transform _MothDewFiord; //TODO假提现 可能需要替换的
-[UnityEngine.Serialization.FormerlySerializedAs("CashFlyPos")]    public Transform MothBoyTwo;
-[UnityEngine.Serialization.FormerlySerializedAs("TopSpine")]    public SkeletonGraphic NetDouse;
-[UnityEngine.Serialization.FormerlySerializedAs("TransitionSpine")]    public SkeletonGraphic PolychromeDouse; // 转场动画spine
-[UnityEngine.Serialization.FormerlySerializedAs("_FlyBubble")]    public BoySatire _BoySatire;
+    [UnityEngine.Serialization.FormerlySerializedAs("CoinText")] public Text CapeDrug;
+    [UnityEngine.Serialization.FormerlySerializedAs("CashText")] public Text MothDrug;
+    [UnityEngine.Serialization.FormerlySerializedAs("_CashOutEnter")] public Transform _MothDewFiord; //TODO假提现 可能需要替换的
+    [UnityEngine.Serialization.FormerlySerializedAs("CashFlyPos")] public Transform MothBoyTwo;
+    [UnityEngine.Serialization.FormerlySerializedAs("TopSpine")] public SkeletonGraphic NetDouse;
+    [UnityEngine.Serialization.FormerlySerializedAs("TransitionSpine")] public SkeletonGraphic PolychromeDouse; // 转场动画spine
+    [UnityEngine.Serialization.FormerlySerializedAs("_FlyBubble")] public BoySatire _BoySatire;
     int BoySatireTenet;
-[UnityEngine.Serialization.FormerlySerializedAs("WheelItemSpine")]    public SkeletonGraphic TingeHomeDouse;
-[UnityEngine.Serialization.FormerlySerializedAs("TempMoneyBG")]    public Transform SaltSteepBG;
-[UnityEngine.Serialization.FormerlySerializedAs("TempMoneyText")]    public Text SaltSteepDrug;
-[UnityEngine.Serialization.FormerlySerializedAs("TempDiamondText")]    public Text SaltMagentaDrug;
-[UnityEngine.Serialization.FormerlySerializedAs("SideUI")]    public Transform LieuUI; // 侧边UI
-[UnityEngine.Serialization.FormerlySerializedAs("m_CashBtn")]    public Button m_MothPig;
-[UnityEngine.Serialization.FormerlySerializedAs("cashitrmObj")]    public GameObject BirthdayDig;
-[UnityEngine.Serialization.FormerlySerializedAs("jindu1rect")]    public RectTransform Horde1Rest;
-[UnityEngine.Serialization.FormerlySerializedAs("jindu2rect")]   public RectTransform Horde2Rest;
-[UnityEngine.Serialization.FormerlySerializedAs("jindu3rect")]    public RectTransform Horde3Rest;
-[UnityEngine.Serialization.FormerlySerializedAs("jindu4rect")]    public RectTransform Horde4Rest;
-[UnityEngine.Serialization.FormerlySerializedAs("Coinobj")]    public GameObject Various;
-[UnityEngine.Serialization.FormerlySerializedAs("Cashobj")]    public GameObject Rebirth;
-[UnityEngine.Serialization.FormerlySerializedAs("bottom")]
+    [UnityEngine.Serialization.FormerlySerializedAs("WheelItemSpine")] public SkeletonGraphic TingeHomeDouse;
+    [UnityEngine.Serialization.FormerlySerializedAs("TempMoneyBG")] public Transform SaltSteepBG;
+    [UnityEngine.Serialization.FormerlySerializedAs("TempMoneyText")] public Text SaltSteepDrug;
+    [UnityEngine.Serialization.FormerlySerializedAs("TempDiamondText")] public Text SaltMagentaDrug;
+    [UnityEngine.Serialization.FormerlySerializedAs("SideUI")] public Transform LieuUI; // 侧边UI
+    [UnityEngine.Serialization.FormerlySerializedAs("m_CashBtn")] public Button m_MothPig;
+    [UnityEngine.Serialization.FormerlySerializedAs("cashitrmObj")] public GameObject BirthdayDig;
+    [UnityEngine.Serialization.FormerlySerializedAs("jindu1rect")] public RectTransform Horde1Rest;
+    [UnityEngine.Serialization.FormerlySerializedAs("jindu2rect")] public RectTransform Horde2Rest;
+    [UnityEngine.Serialization.FormerlySerializedAs("jindu3rect")] public RectTransform Horde3Rest;
+    [UnityEngine.Serialization.FormerlySerializedAs("jindu4rect")] public RectTransform Horde4Rest;
+    [UnityEngine.Serialization.FormerlySerializedAs("Coinobj")] public GameObject Various;
+    [UnityEngine.Serialization.FormerlySerializedAs("Cashobj")] public GameObject Rebirth;
+    [UnityEngine.Serialization.FormerlySerializedAs("bottom")]
     public Transform Spread;
-[UnityEngine.Serialization.FormerlySerializedAs("MiddleTransParent")]    public Transform LinearUpsetBeluga;
-[UnityEngine.Serialization.FormerlySerializedAs("bottomTransParent")]    public Transform SpreadUpsetBeluga;
+    [UnityEngine.Serialization.FormerlySerializedAs("MiddleTransParent")] public Transform LinearUpsetBeluga;
+    [UnityEngine.Serialization.FormerlySerializedAs("bottomTransParent")] public Transform SpreadUpsetBeluga;
     public Transform bottomZhiyin;
 
     [Header("点击掉球")]
-[UnityEngine.Serialization.FormerlySerializedAs("DropBallTrigger")]    public EventTrigger SwimHoleCompost;
-[UnityEngine.Serialization.FormerlySerializedAs("BallBornPos")]    public Transform HoleFrayTwo;
+    [UnityEngine.Serialization.FormerlySerializedAs("DropBallTrigger")] public EventTrigger SwimHoleCompost;
+    [UnityEngine.Serialization.FormerlySerializedAs("BallBornPos")] public Transform HoleFrayTwo;
     float SwellSwimHoleAnd;
     bool BlissOnLoss;
     float LossSwimHoleAnd;
-[UnityEngine.Serialization.FormerlySerializedAs("BallParent")]    public Transform HoleBeluga;
+    [UnityEngine.Serialization.FormerlySerializedAs("BallParent")] public Transform HoleBeluga;
     int HoleBuy;
-[UnityEngine.Serialization.FormerlySerializedAs("BallNumText")]    public Text HoleBuyDrug;
+    [UnityEngine.Serialization.FormerlySerializedAs("BallNumText")] public Text HoleBuyDrug;
     //public Text BuyBallPriceText;
     int HoleAdaptiveTenet;
-[UnityEngine.Serialization.FormerlySerializedAs("BallRecoveryTimeText")]    public Text HoleAdaptivePestDrug;
-[UnityEngine.Serialization.FormerlySerializedAs("ItemParten")]    public Transform HomeRegain;
-    List<Home> Humor= new List<Home>();
-    List<Home> ReleaseHumor= new List<Home>(); //记录特殊物品 切换游戏模式时记录 切回来恢复
-    List<ItemType> ReleaseHomeEntry= new List<ItemType>(); //记录特殊物品类型 切换游戏模式时记录 切回来恢复
+    [UnityEngine.Serialization.FormerlySerializedAs("BallRecoveryTimeText")] public Text HoleAdaptivePestDrug;
+    [UnityEngine.Serialization.FormerlySerializedAs("ItemParten")] public Transform HomeRegain;
+    List<Home> Humor = new List<Home>();
+    List<Home> ReleaseHumor = new List<Home>(); //记录特殊物品 切换游戏模式时记录 切回来恢复
+    List<ItemType> ReleaseHomeEntry = new List<ItemType>(); //记录特殊物品类型 切换游戏模式时记录 切回来恢复
     int Newly_SwimHoleImply;
 
     [Header("疯狂模式")]
-[UnityEngine.Serialization.FormerlySerializedAs("FeverNumImage")]    public Image WhaleBuyStorm; // 疯狂模式计数进度条
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverNumImage")] public Image WhaleBuyStorm; // 疯狂模式计数进度条
     int WhaleBuy;  // 疯狂模式计数
     int HoleBuy_AnWhaleTall; // 疯狂模式中的球数量
-[UnityEngine.Serialization.FormerlySerializedAs("BallNum_InFever_Icon")]    public GameObject HoleBuy_AnWhale_Darn;
-    [HideInInspector] [UnityEngine.Serialization.FormerlySerializedAs("IsFeverMode")]public bool OnWhaleTall; // 是否处于疯狂模式
+    [UnityEngine.Serialization.FormerlySerializedAs("BallNum_InFever_Icon")] public GameObject HoleBuy_AnWhale_Darn;
+    [HideInInspector][UnityEngine.Serialization.FormerlySerializedAs("IsFeverMode")] public bool OnWhaleTall; // 是否处于疯狂模式
     float WhaleTenet; // 疯狂模式持续时间
-[UnityEngine.Serialization.FormerlySerializedAs("FeverItemParent")]    public Transform WhaleHomeBeluga;
-[UnityEngine.Serialization.FormerlySerializedAs("Lines")]    public List<HomeJazzMime> Cargo= new List<HomeJazzMime>();
-[UnityEngine.Serialization.FormerlySerializedAs("Fever_NeedHide")]    public GameObject[] Whale_PeepDeep; // 疯狂模式需要隐藏的物体
-[UnityEngine.Serialization.FormerlySerializedAs("Fever_NeedShow")]    public GameObject[] Whale_PeepEven; // 疯狂模式需要显示的物体
-[UnityEngine.Serialization.FormerlySerializedAs("FeverChest")]    public Transform WhaleAngle;
-[UnityEngine.Serialization.FormerlySerializedAs("FeverChestSpine")]    public SkeletonGraphic WhaleAngleDouse;
-[UnityEngine.Serialization.FormerlySerializedAs("FeverChestRewardEffect")]    public UIParticle WhaleAngleUnlessButton;
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverItemParent")] public Transform WhaleHomeBeluga;
+    [UnityEngine.Serialization.FormerlySerializedAs("Lines")] public List<HomeJazzMime> Cargo = new List<HomeJazzMime>();
+    [UnityEngine.Serialization.FormerlySerializedAs("Fever_NeedHide")] public GameObject[] Whale_PeepDeep; // 疯狂模式需要隐藏的物体
+    [UnityEngine.Serialization.FormerlySerializedAs("Fever_NeedShow")] public GameObject[] Whale_PeepEven; // 疯狂模式需要显示的物体
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverChest")] public Transform WhaleAngle;
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverChestSpine")] public SkeletonGraphic WhaleAngleDouse;
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverChestRewardEffect")] public UIParticle WhaleAngleUnlessButton;
     public UIParticle CoinBoom;
     int WhaleAngleBuy; // 疯狂模式宝箱开启需要击打次数
-[UnityEngine.Serialization.FormerlySerializedAs("FeverChestNumText")]    public Text WhaleAngleBuyDrug; // 疯狂模式宝箱开启需要击打次数文字
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverChestNumText")] public Text WhaleAngleBuyDrug; // 疯狂模式宝箱开启需要击打次数文字
     float WagonMagentaBuyAnWhaleTall; // 疯狂模式获得的钻石数量
-[UnityEngine.Serialization.FormerlySerializedAs("GetedDiamondNumInFeverModeText")]    public Text WagonMagentaBuyAnWhaleTallDrug; // 疯狂模式获得的钻石数量文字
-[UnityEngine.Serialization.FormerlySerializedAs("EnterFeverSpine")]    public SkeletonGraphic FiordWhaleDouse;
-[UnityEngine.Serialization.FormerlySerializedAs("EnterFeverGO1")]    public Transform FiordWhaleGO1;
-[UnityEngine.Serialization.FormerlySerializedAs("EnterFeverGO1_Lights")]    public Image[] FiordWhaleGO1_Teapot;
-[UnityEngine.Serialization.FormerlySerializedAs("EnterFeverGO2")]    public Transform FiordWhaleGO2;
-[UnityEngine.Serialization.FormerlySerializedAs("EnterFeverEffect")]    public UIParticle FiordWhaleButton;
-[UnityEngine.Serialization.FormerlySerializedAs("FeverSpine")]    public SkeletonGraphic WhaleDouse;
-[UnityEngine.Serialization.FormerlySerializedAs("FeverSpineheng")]    public SkeletonGraphic WhaleLegendary;
-[UnityEngine.Serialization.FormerlySerializedAs("Lights1")]
+    [UnityEngine.Serialization.FormerlySerializedAs("GetedDiamondNumInFeverModeText")] public Text WagonMagentaBuyAnWhaleTallDrug; // 疯狂模式获得的钻石数量文字
+    [UnityEngine.Serialization.FormerlySerializedAs("EnterFeverSpine")] public SkeletonGraphic FiordWhaleDouse;
+    [UnityEngine.Serialization.FormerlySerializedAs("EnterFeverGO1")] public Transform FiordWhaleGO1;
+    [UnityEngine.Serialization.FormerlySerializedAs("EnterFeverGO1_Lights")] public Image[] FiordWhaleGO1_Teapot;
+    [UnityEngine.Serialization.FormerlySerializedAs("EnterFeverGO2")] public Transform FiordWhaleGO2;
+    [UnityEngine.Serialization.FormerlySerializedAs("EnterFeverEffect")] public UIParticle FiordWhaleButton;
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverSpine")] public SkeletonGraphic WhaleDouse;
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverSpineheng")] public SkeletonGraphic WhaleLegendary;
+    [UnityEngine.Serialization.FormerlySerializedAs("Lights1")]
     public Image[] Teapot1; //灯光效果
-[UnityEngine.Serialization.FormerlySerializedAs("Lights2")]    public Image[] Teapot2; //灯光效果
-[UnityEngine.Serialization.FormerlySerializedAs("FeveLightAnim")]    public Animator HomoPlaceShoe;
-[UnityEngine.Serialization.FormerlySerializedAs("FeverSpineEnter")]    public SkeletonGraphic WhaleDouseFiord;
+    [UnityEngine.Serialization.FormerlySerializedAs("Lights2")] public Image[] Teapot2; //灯光效果
+    [UnityEngine.Serialization.FormerlySerializedAs("FeveLightAnim")] public Animator HomoPlaceShoe;
+    [UnityEngine.Serialization.FormerlySerializedAs("FeverSpineEnter")] public SkeletonGraphic WhaleDouseFiord;
     [Header("底部收集器/老虎机/开启翻倍机")]
-[UnityEngine.Serialization.FormerlySerializedAs("UnderCollecters")]    public Circulate[] AsideEvanescent; //底部收集器
-[UnityEngine.Serialization.FormerlySerializedAs("SlotMachine")]    public EntombLove LoveSymptom; // 老虎机
-[UnityEngine.Serialization.FormerlySerializedAs("SlotMachine_AutoFallBallEffect")]    public UIParticle LoveSymptom_LinkTopiHoleButton;
+    [UnityEngine.Serialization.FormerlySerializedAs("UnderCollecters")] public Circulate[] AsideEvanescent; //底部收集器
+    [UnityEngine.Serialization.FormerlySerializedAs("SlotMachine")] public EntombLove LoveSymptom; // 老虎机
+    [UnityEngine.Serialization.FormerlySerializedAs("SlotMachine_AutoFallBallEffect")] public UIParticle LoveSymptom_LinkTopiHoleButton;
 
     [Header("翻倍机")]
-[UnityEngine.Serialization.FormerlySerializedAs("_DoubleMachine")]    public EnzymeSymptom _EnzymeSymptom;
+    [UnityEngine.Serialization.FormerlySerializedAs("_DoubleMachine")] public EnzymeSymptom _EnzymeSymptom;
     int EnzymeSymptom_IgneousTenet;
 
     [Header("收集物")]
-[UnityEngine.Serialization.FormerlySerializedAs("CollectASigns")]    public GameObject[] MethaneAEthic; // 收集标志
-[UnityEngine.Serialization.FormerlySerializedAs("CollectBSigns")]    public GameObject[] MethaneBEthic; // 收集标志
-[UnityEngine.Serialization.FormerlySerializedAs("CollectASignEffects")]    public UIParticle[] MethaneAItemFiction;
-[UnityEngine.Serialization.FormerlySerializedAs("CollectBSignEffects")]    public UIParticle[] MethaneBItemFiction;
-[UnityEngine.Serialization.FormerlySerializedAs("CollectAOkSigns")]    public UIParticle[] MethaneAIfEthic; // 收集成功标志
-[UnityEngine.Serialization.FormerlySerializedAs("CollectBOkSigns")]    public UIParticle[] MethaneBIfEthic; // 收集成功标志
-    int[] MethaneBuy= new int[3]; // 各类物品收集数量
+    [UnityEngine.Serialization.FormerlySerializedAs("CollectASigns")] public GameObject[] MethaneAEthic; // 收集标志
+    [UnityEngine.Serialization.FormerlySerializedAs("CollectBSigns")] public GameObject[] MethaneBEthic; // 收集标志
+    [UnityEngine.Serialization.FormerlySerializedAs("CollectASignEffects")] public UIParticle[] MethaneAItemFiction;
+    [UnityEngine.Serialization.FormerlySerializedAs("CollectBSignEffects")] public UIParticle[] MethaneBItemFiction;
+    [UnityEngine.Serialization.FormerlySerializedAs("CollectAOkSigns")] public UIParticle[] MethaneAIfEthic; // 收集成功标志
+    [UnityEngine.Serialization.FormerlySerializedAs("CollectBOkSigns")] public UIParticle[] MethaneBIfEthic; // 收集成功标志
+    int[] MethaneBuy = new int[3]; // 各类物品收集数量
     int MethaneA_Tenet; // 收集物A出现计时
     int MethaneB_Tenet; // 收集物B出现计时
-    float[] Methane_UnlessNine= new float[2]; // 收集物奖励数值
-[UnityEngine.Serialization.FormerlySerializedAs("Collect_RewardTexts")]    public Text[] Methane_UnlessFaith; // 收集物奖励文字
+    float[] Methane_UnlessNine = new float[2]; // 收集物奖励数值
+    [UnityEngine.Serialization.FormerlySerializedAs("Collect_RewardTexts")] public Text[] Methane_UnlessFaith; // 收集物奖励文字
     int Tinge_Tenet; //转盘出现计时
     public GameObject cashimg1;
     public GameObject cashimg2;
 
     [Header("黑洞")]
-[UnityEngine.Serialization.FormerlySerializedAs("BlockHole")]    public GameObject BlockHole;
+    [UnityEngine.Serialization.FormerlySerializedAs("BlockHole")] public GameObject BlockHole;
     int RoundMuchBuy; // 黑洞收集到小球数量
-[UnityEngine.Serialization.FormerlySerializedAs("BlackHoleNumText")]    public Text RoundMuchBuyDrug; // 黑洞数字
-[UnityEngine.Serialization.FormerlySerializedAs("BlockHoleWallParent")]    public Transform CargoMuchSoupBeluga; //黑洞外墙父物体
-[UnityEngine.Serialization.FormerlySerializedAs("BlockHoleWall1")]    public Transform CargoMuchSoup1; //黑洞外墙
-[UnityEngine.Serialization.FormerlySerializedAs("BlockHoleWall2")]    public Transform CargoMuchSoup2; //黑洞外墙
-[UnityEngine.Serialization.FormerlySerializedAs("BlockAddBallEffect")]    public UIParticle CargoPitHoleButton;
+    [UnityEngine.Serialization.FormerlySerializedAs("BlackHoleNumText")] public Text RoundMuchBuyDrug; // 黑洞数字
+    [UnityEngine.Serialization.FormerlySerializedAs("BlockHoleWallParent")] public Transform CargoMuchSoupBeluga; //黑洞外墙父物体
+    [UnityEngine.Serialization.FormerlySerializedAs("BlockHoleWall1")] public Transform CargoMuchSoup1; //黑洞外墙
+    [UnityEngine.Serialization.FormerlySerializedAs("BlockHoleWall2")] public Transform CargoMuchSoup2; //黑洞外墙
+    [UnityEngine.Serialization.FormerlySerializedAs("BlockAddBallEffect")] public UIParticle CargoPitHoleButton;
 
     [Header("Buff")]
-[UnityEngine.Serialization.FormerlySerializedAs("BounceWallOutline")]    public DrugBenefit[] BackupSoupBenefit; //弹力墙外描边
-[UnityEngine.Serialization.FormerlySerializedAs("Wall_PhysicsMaterial")]    public PhysicsMaterial2D Soup_TypicalRotation; //墙物理材质
+    [UnityEngine.Serialization.FormerlySerializedAs("BounceWallOutline")] public DrugBenefit[] BackupSoupBenefit; //弹力墙外描边
+    [UnityEngine.Serialization.FormerlySerializedAs("Wall_PhysicsMaterial")] public PhysicsMaterial2D Soup_TypicalRotation; //墙物理材质
     bool Dose_Soup_Backup; // 是否有变弹力墙事件
     int Dose_Soup_Backup_Tenet; // 变弹力墙事件
     bool Dose_EnzymeSymptom_Finch; // 乘倍
@@ -148,9 +151,9 @@ public class RoomCigar : SakeUIDaddy
     float Dose_EnzymeSymptom_Akin_Tenet;
     bool Dose_BackupHole;
     int Dose_BackupHole_Tenet;
-    List<Coroutine> TopiHoleIndividual= new List<Coroutine>(); // 记录所有掉球协程
+    List<Coroutine> TopiHoleIndividual = new List<Coroutine>(); // 记录所有掉球协程
 
-    [HideInInspector] [UnityEngine.Serialization.FormerlySerializedAs("_GuidePanel")]public ReactCigar _ReactCigar;
+    [HideInInspector][UnityEngine.Serialization.FormerlySerializedAs("_GuidePanel")] public ReactCigar _ReactCigar;
 
     //测试模式
     float Gain_LinkSwimHoleTenet;
@@ -173,14 +176,29 @@ public class RoomCigar : SakeUIDaddy
         _Weight = Camera.main;
         BoySatireTenet = WedSoulHue.Instance._RoomIraq.fly_bubble.cold_down;
         PolychromeDouse.transform.SetParent(UIGrecian.AshForecast()._Net);
-        GelPig.onClick.AddListener(() =>
+        CoinEnter.onClick.AddListener(() =>
         {
-            if (PestGrecian.AshForecast().OnBeach)
+            if (ColumnStud.OnDaily())
                 return;
             ShootHue.AshForecast().NormButton(ShootMuch.UIMusic.click);
-            RoomBeach();
-            AnewUIPure(nameof(PavlovaCigar));
+            UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel),"2");
         });
+        CashEnter.onClick.AddListener(() =>
+        {
+            if (ColumnStud.OnDaily())
+                return;
+            ShootHue.AshForecast().NormButton(ShootMuch.UIMusic.click);
+            UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel), "1");
+        });
+
+        GelPig.onClick.AddListener(() =>
+            {
+                if (PestGrecian.AshForecast().OnBeach)
+                    return;
+                ShootHue.AshForecast().NormButton(ShootMuch.UIMusic.click);
+                RoomBeach();
+                AnewUIPure(nameof(PavlovaCigar));
+            });
         m_MothPig.onClick.AddListener(() =>
         {
             if (PestGrecian.AshForecast().OnBeach)
@@ -278,17 +296,18 @@ public class RoomCigar : SakeUIDaddy
 
             RoomWake.localPosition = new Vector2(0, -200);
 
-    //  _CashOutEnter.transform.parent.localScale = Vector3.one * .8f;
-    //  _CashOutEnter.transform.parent.localPosition = new Vector2(0, -741);
-    //   SetBtn.transform.localPosition = new Vector2(-432, 694);
-    //   TempMoneyBG.localPosition = new Vector2(0, -730);
-}
-        else {
+            //  _CashOutEnter.transform.parent.localScale = Vector3.one * .8f;
+            //  _CashOutEnter.transform.parent.localPosition = new Vector2(0, -741);
+            //   SetBtn.transform.localPosition = new Vector2(-432, 694);
+            //   TempMoneyBG.localPosition = new Vector2(0, -730);
+        }
+        else
+        {
             top.anchoredPosition = new Vector2(top.anchoredPosition.x, top.anchoredPosition.y - 50);
             bottom.anchoredPosition = new Vector2(bottom.anchoredPosition.x, bottom.anchoredPosition.y + 50);
             Horde1Rest.anchoredPosition = new Vector2(Horde1Rest.anchoredPosition.x, Horde1Rest.anchoredPosition.y - 40);
-         //   jindu2rect.anchoredPosition = new Vector2(jindu2rect.anchoredPosition.x, jindu2rect.anchoredPosition.y - 40);
-          //  jindu3rect.anchoredPosition = new Vector2(jindu3rect.anchoredPosition.x, jindu3rect.anchoredPosition.y - 40);
+            //   jindu2rect.anchoredPosition = new Vector2(jindu2rect.anchoredPosition.x, jindu2rect.anchoredPosition.y - 40);
+            //  jindu3rect.anchoredPosition = new Vector2(jindu3rect.anchoredPosition.x, jindu3rect.anchoredPosition.y - 40);
         }
 
 
@@ -297,7 +316,7 @@ public class RoomCigar : SakeUIDaddy
             cashimg1.SetActive(false);
             cashimg2.SetActive(false);
             _MothDewFiord.transform.parent.gameObject.SetActive(false);
-       //     TempMoneyBG.gameObject.SetActive(true);
+            //     TempMoneyBG.gameObject.SetActive(true);
             SaltPitSteep(0);
             SaltPitMagenta(0);
 
@@ -342,6 +361,8 @@ public class RoomCigar : SakeUIDaddy
 
     private void Update()
     {
+        CashTime.text = JT_Manager.AshForecast().GetFormattedDurationStr(JT_Manager.AshForecast().CardBornTimer);
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel));
@@ -463,7 +484,8 @@ public class RoomCigar : SakeUIDaddy
         {
             if ((i >= 7) && (i <= 12) || (i >= 20) && (i <= 25) || (i >= 33) && (i <= 38))
                 Humor[i].Wine(itemType);
-            else {
+            else
+            {
                 if (Humor[i].name == "3" && !ColumnStud.OnDaily() && !CellIraqGrecian.GetBool(CWinter.sv_zhuanpan_rot))
                 {
                     Humor[i].Wine(ItemType.Wheel);
@@ -1100,7 +1122,7 @@ public class RoomCigar : SakeUIDaddy
                 }
                 FiordWhaleGO2.gameObject.SetActive(true);
                 FiordWhaleGO2.localPosition = new Vector2(0, 2400);
-              //  EnterFeverGO2.DOLocalMoveY(-439.07f, 0.5f).SetEase(Ease.OutBack).OnComplete(() =>
+                //  EnterFeverGO2.DOLocalMoveY(-439.07f, 0.5f).SetEase(Ease.OutBack).OnComplete(() =>
                 FiordWhaleGO2.DOLocalMoveY(0f, 0.5f).SetEase(Ease.OutBack).OnComplete(() =>
                 {
                     FiordWhaleButton.Play();
@@ -1122,7 +1144,7 @@ public class RoomCigar : SakeUIDaddy
                     WhaleLegendary.Skeleton.SetToSetupPose();
                     WhaleLegendary.AnimationState.ClearTracks();
                     WhaleLegendary.PlayAnim("heng", true);
-                  
+
                 });
                 //EnterFeverSpine.PlayAnim("2", false);
                 //UnGamePause(() => { EnterFeverMode(); });
@@ -1530,7 +1552,7 @@ public class RoomCigar : SakeUIDaddy
             CollectSigns[i].SetActive(MethaneBuy[Index] > i);
 
         Transform Sign = CollectSigns[MethaneBuy[Index] - 1].transform;
-        Vector2 CubicTwo= Sign.position;
+        Vector2 CubicTwo = Sign.position;
         Sign.position = Pos;
         Vector2 JumpPos = new Vector2(Pos.x + Random.Range(-.2f, .2f), Pos.y);
         Sign.DOJump(JumpPos, .5f, 1, .4f, false);
@@ -1752,7 +1774,7 @@ public class RoomCigar : SakeUIDaddy
         if (OnWhaleTall)
             return;
 
-        Transform Button= ObjectPool.Instance.Get("Slot飞图标特效").transform;
+        Transform Button = ObjectPool.Instance.Get("Slot飞图标特效").transform;
         Button.SetParent(transform);
         Button.localScale = Vector3.one;
         Button.position = LoveSymptom.transform.position;
@@ -1830,19 +1852,20 @@ public class RoomCigar : SakeUIDaddy
     public void React1()
     {
         _ReactCigar = AnewUIPure(nameof(ReactCigar)).GetComponent<ReactCigar>();
-       _ReactCigar.EvenBlue(_MothDewFiord.transform.parent);
+        _ReactCigar.EvenBlue(_MothDewFiord.transform.parent);
         _ReactCigar.EvenSoul("Help you understand how to withdraw cash", -650);
         _ReactCigar.EvenAlso(new Vector2[] { _MothDewFiord.transform.parent.position });
-        _ReactCigar.EvenPostPig(() => {
+        _ReactCigar.EvenPostPig(() =>
+        {
             _ReactCigar.Deep(false);
             _ReactCigar = null;
             WispyUIPure(nameof(ReactCigar));
-            AnewUIPure(nameof(JT_CashOutPanel)); 
+            AnewUIPure(nameof(JT_CashOutPanel));
         });
     }
     public void React2()
     {
-       // MyRoomBeach();
+        // MyRoomBeach();
         _ReactCigar = AnewUIPure(nameof(ReactCigar)).GetComponent<ReactCigar>();
         _ReactCigar.EvenBlue_Round(new Vector2(0, -100), new Vector2(1000, 1300));
         _ReactCigar.EvenSoul("Click the circled area to place the ball", 820);
