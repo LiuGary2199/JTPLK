@@ -207,7 +207,7 @@ public class RoomCigar : SakeUIDaddy
             RoomBeach();
             if (RoomCigar.Instance._ReactCigar != null)
                 RoomCigar.Instance._ReactCigar.Deep(false);
-            UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel));
+            UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel), "1");
         });
         CapeBuy = 0;
         if (ColumnStud.OnDaily())
@@ -365,7 +365,7 @@ public class RoomCigar : SakeUIDaddy
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel));
+            UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel), "1");
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
@@ -1860,7 +1860,7 @@ public class RoomCigar : SakeUIDaddy
             _ReactCigar.Deep(false);
             _ReactCigar = null;
             WispyUIPure(nameof(ReactCigar));
-            AnewUIPure(nameof(JT_CashOutPanel));
+            UIGrecian.AshForecast().EvenUIDaddy(nameof(JT_CashOutPanel), "1");
         });
     }
     public void React2()

@@ -112,7 +112,7 @@ public class ZJT_Manager : ObeySubstrate<ZJT_Manager>
 #endif
 
 #if JT
-
+        JT_Manager.AshForecast().ReportEvent_LoadingTime();
 #endif
     }
 
@@ -124,7 +124,7 @@ public class ZJT_Manager : ObeySubstrate<ZJT_Manager>
 #endif
 
 #if JT
-       return JT_Manager.AshForecast().Data.UserID;
+        return JT_Manager.AshForecast().Data.UserID;
 #endif
         return "";
     }

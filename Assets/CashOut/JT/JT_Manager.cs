@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -35,21 +36,24 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
 
     [HideInInspector] public float Rate = 1; //汇率
     bool IsCountOfflineTime;
+    [HideInInspector] public long StartTime;
+    string ClientIP;
+    string RealIP;
 
 
     void Update()
     {
         //测试
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            AddMoney(Random.Range(10, 100), "JT_Money1");
-            AddMoney(Random.Range(500, 1000), "JT_Money2");
-        }
-        if (Input.GetKey(KeyCode.R))
-        {
-            if (Input.GetKeyDown(KeyCode.A))
-                ADGrecian.Forecast.AmidUnlessRebel((ok) => { print("模拟看广告"); }, "0");
-        }
+        // if (Input.GetKeyDown(KeyCode.Q))
+        // {
+        //     AddMoney(Random.Range(10, 100), "JT_Money1");
+        //     AddMoney(Random.Range(500, 1000), "JT_Money2");
+        // }
+        // if (Input.GetKey(KeyCode.R))
+        // {
+        //     if (Input.GetKeyDown(KeyCode.A))
+        //         ADGrecian.Forecast.AmidUnlessRebel((ok) => { print("模拟看广告"); }, "0");
+        // }
     }
 
     public void Init()
@@ -140,6 +144,7 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
         if (IsCountOfflineTime)
         {
             OfflineTime = GetOfflineTime();
+            OfflineTime = 99999999;
             IsCountOfflineTime = false;
             print($"离线时间:{OfflineTime}");
         }
@@ -303,7 +308,7 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
                     {
                         // 完成任务打点
                         SashNewlyBroker.AshForecast().VastNewly("1403", TaskIndex.ToString(), TaskData.Name, ExchangeItemData.TaskValue.ToString());
-                        
+
                         ExchangeItemData.CompletedTaskNum++;
                         // 完成所有任务 移入订单页
                         if (ExchangeItemData.CompletedTaskNum >= TaskGroupIndexsList[ExchangeItemData.TaskGroupIndex].Count)
@@ -385,7 +390,7 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
         OrderItemData.Time = CurrentTime;
         OrderItemData.PlatformIndex = CurrentPlatformIndex;
         if (IsQueue) //如果是排队任务 随机一个队列号
-            OrderItemData.Queue = Random.Range(8000, 10000);
+            OrderItemData.Queue = UnityEngine.Random.Range(8000, 10000);
         Order_ItemDataList.Add(OrderItemData);
 
         //抢钱从卡片列表移除
@@ -511,6 +516,11 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
     {
         if (pause)
             UpdateLastOnlineTime();
+
+        if (pause)
+            ReportEvent(1005);
+        else
+            ReportEvent(1006);
     }
 
 
@@ -643,6 +653,16 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
                         CellIraqGrecian.SetString("CashOut_Token", response.data.token);
                         Data = new CashOutResponseData();
                         Data.UserID = response.data.id.ToString();
+
+                        //上报ip
+                        GetClientIP();
+                        GetRealIP_Step1();
+
+                        //游戏启动打点 需要先登录成功才能打点 这里的时间戳参数由ReportEvent方法内部特殊处理
+                        ReportEvent(1000);
+
+                        //上报设备信息
+                        ReportEvent_DeviceInfo();
                     }
                     else
                     {
@@ -712,6 +732,263 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
         string formattedUuid = uuid.ToLowerInvariant().Replace("-", "");
         return formattedUuid;
     }
+
+    void GetClientIP() // 获取客户端IP
+    {
+        string url = "http://ip-api.com/json/?key=NN3ExblXQt2Esoy";
+        WedLackGrecian.AshForecast().HttpAsh(
+            url: url,
+            success: (result) =>
+            {
+                //CashOutLog("获取客户端IP数据： " + result.downloadHandler.text, false);
+                try
+                {
+                    string json = result.downloadHandler.text;
+                    JsonData data = JsonMapper.ToObject(json);
+                    if (data.ContainsKey("query"))
+                    {
+                        ClientIP = data["query"].ToString();
+                        ReportIDs();
+                    }
+                    else
+                    {
+                        CashOutLog("未找到IP地址", true);
+                    }
+                }
+                catch (Exception e)
+                {
+                    CashOutLog($"解析获取客户端IP响应数据失败: {e.Message}", true);
+                }
+            },
+            fail: () =>
+            {
+                CashOutLog("获取客户端IP请求失败", true);
+            },
+            timeout: 3f,
+            headers: null
+        );
+    }
+    void GetRealIP_Step1() // 获取真实IP网址
+    {
+        string url = "https://nstool.netease.com/";
+        WedLackGrecian.AshForecast().HttpAsh(
+            url: url,
+            success: (result) =>
+            {
+                //CashOutLog("获取真实IP网址： " + result.downloadHandler.text, false);
+                try
+                {
+                    // 使用正则表达式匹配iframe的src属性
+                    var match = System.Text.RegularExpressions.Regex.Match(result.downloadHandler.text, @"<iframe\s+[^>]*src=['""]([^'""]+)['""][^>]*>", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+                    if (match.Success)
+                    {
+                        GetRealIP_Step2(match.Groups[1].Value);
+                        //RealIP = match.Groups[1].Value;
+                    }
+                }
+                catch (Exception e)
+                {
+                    CashOutLog($"解析获取真实IP网址响应数据失败: {e.Message}", true);
+                }
+            },
+            fail: () =>
+            {
+                CashOutLog("获取真实IP网址请求失败", true);
+            },
+            timeout: 3f,
+            headers: null
+        );
+    }
+    void GetRealIP_Step2(string url) // 获取真实IP
+    {
+        WedLackGrecian.AshForecast().HttpAsh(
+           url: url,
+           success: (result) =>
+           {
+               //CashOutLog("获取真实IP数据： " + result.downloadHandler.text, false);
+               try
+               {
+                   string ipPattern = @"(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)";
+                   var match = System.Text.RegularExpressions.Regex.Match(result.downloadHandler.text, ipPattern);
+                   if (match.Success)
+                   {
+                       RealIP = match.Groups[0].Value;
+                       ReportIDs();
+                   }
+               }
+               catch (Exception e)
+               {
+                   CashOutLog($"解析获取真实IP响应数据失败: {e.Message}", true);
+               }
+           },
+           fail: () =>
+           {
+               CashOutLog("获取真实IP请求失败", true);
+           },
+           timeout: 3f,
+           headers: null
+       );
+    }
+    void ReportIDs() // 上报各种ID
+    {
+        CashOutLog("上报ID  客户端Ip：" + ClientIP + "  真实Ip：" + RealIP);
+        string url = $"{BaseUrl}/user/meta";
+        WedLackGrecian.AshForecast().BeadSashMute(
+            url: url,
+            jsonData: GetReportIDsBody(),
+            success: (result) =>
+            {
+                try
+                {
+                    var response = JsonMapper.ToObject<BaseResponse>(result.downloadHandler.text);
+                    if (response.code == 0) // 成功状态码
+                    {
+                        CashOutLog("上报ID成功 数据： " + result.downloadHandler.text, false, true);
+                    }
+                    else
+                    {
+                        CashOutLog($"上报各种ID失败: {response.msg}", true);
+                    }
+                }
+                catch (Exception e)
+                {
+                    CashOutLog($"解析上报各种ID响应数据失败: {e.Message}", true);
+                }
+            },
+            fail: () =>
+            {
+                CashOutLog("上报各种ID请求失败", true);
+            },
+            timeout: 3f,
+            headers: Headers()
+        );
+    }
+    string GetReportIDsBody() // 获取上报各种ID的请求体(处理某个ip为空的情况)
+    {
+        if (string.IsNullOrEmpty(ClientIP))
+            return JsonMapper.ToJson(new { REAL_IP = RealIP });
+        if (string.IsNullOrEmpty(RealIP))
+            return JsonMapper.ToJson(new { CLIENT_IP = ClientIP });
+        return JsonMapper.ToJson(new { CLIENT_IP = ClientIP, REAL_IP = RealIP });
+    }
+
+    public void ReportEvent(int type, string string_0 = null, string string_1 = null, int? big_int_0 = null) // 上报事件
+    {
+        if (string.IsNullOrEmpty(CellIraqGrecian.GetString("CashOut_Token")))
+        {
+            CashOutLog($"没Token不上报事件{type}", true);
+            return;
+        }
+
+        long EventTimestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(); //毫秒时间戳
+        if (type == 1000)  //游戏启动时间戳 由于要先等登录成功获取token 所以特殊处理
+            EventTimestamp = StartTime;
+        RequestData_ReportEvent EventRequest = new RequestData_ReportEvent();
+        EventRequest.network = GetNetworkInt();
+        EventRequest.time_zone = GetTimeZone();
+        EventRequest.timestamp = EventTimestamp;
+        EventRequest.events = new List<RequestData_ReportEvent_Event>();
+        RequestData_ReportEvent_Event Event = new RequestData_ReportEvent_Event();
+        Event.type = type;
+        Event.timestamp = EventTimestamp;
+        Event.string_0 = string_0;
+        Event.string_1 = string_1;
+        Event.big_int_0 = big_int_0;
+        EventRequest.events.Add(Event);
+
+        string url = $"{BaseUrl}/event";
+        CashOutLog($"上报事件{type}  请求体: {JsonMapper.ToJson(EventRequest)}", false);
+        WedLackGrecian.AshForecast().BeadSashMute(
+            url: url,
+            jsonData: JsonMapper.ToJson(EventRequest),
+            success: (result) =>
+            {
+                //CashOutLog("上报事件数据： " + result.downloadHandler.text, false);
+                try
+                {
+                    var response = JsonMapper.ToObject<BaseResponse>(result.downloadHandler.text);
+                    if (response.code == 0) // 成功状态码
+                    {
+                        CashOutLog($"上报事件{type}成功", false, true);
+                    }
+                    else
+                    {
+                        CashOutLog($"上报事件{type}失败: {response.msg}", true);
+                    }
+                }
+                catch (Exception e)
+                {
+                    CashOutLog($"解析上报事件响应数据失败: {e.Message}", true);
+                }
+            },
+            fail: () =>
+            {
+                CashOutLog("上报事件请求失败", true);
+            },
+            timeout: 3f,
+            headers: Headers()
+        );
+    }
+    int GetNetworkInt() //根据网络类型获取对应的int值 
+    {
+        //安卓调原生方法 获取更详细的网络类型
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            AndroidJavaClass aj = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            AndroidJavaObject p = aj.GetStatic<AndroidJavaObject>("currentActivity");
+            return p.CallStatic<int>("getNetwork");
+        }
+
+        //苹果端暂时这样处理
+        NetworkReachability reachability = Application.internetReachability;
+        if (reachability == NetworkReachability.ReachableViaLocalAreaNetwork)
+            return 1; // WIFI
+        else
+            return 0; // 其他网络
+    }
+    int GetTimeZone() //获取当前时区相对于UTC0时区的差值，单位：秒
+    {
+        // 获取当前本地时间
+        DateTime localTime = DateTime.Now;
+        // 获取当前时间对应的UTC时间
+        DateTime utcTime = localTime.ToUniversalTime();
+        // 计算时间差（本地时间 - UTC时间）
+        TimeSpan offset = localTime - utcTime;
+        // 将时间差转换为秒
+        return (int)offset.TotalSeconds;
+    }
+    public void ReportEvent_LoadingTime() //上报loading时间
+    {
+        long LoadingTime = System.DateTimeOffset.UtcNow.ToUnixTimeMilliseconds() - StartTime;
+        ReportEvent(1004, null, null, (int)LoadingTime);
+    }
+    void ReportEvent_DeviceInfo() //上报设备信息
+    {
+        //目前只有安卓上报
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            AndroidJavaClass aj = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            AndroidJavaObject p = aj.GetStatic<AndroidJavaObject>("currentActivity");
+            bool isVpn = p.CallStatic<bool>("isVpn");
+            if (isVpn)
+                ReportEvent(1007);
+            bool isSimulator = p.CallStatic<bool>("isSimulator");
+            if (isSimulator)
+                ReportEvent(1008);
+            bool isRoot = p.CallStatic<bool>("isRoot");
+            if (isRoot)
+                ReportEvent(1009);
+            bool isDeveloper = p.CallStatic<bool>("isDeveloper");
+            if (isDeveloper)
+                ReportEvent(1010);
+            bool isUsb = p.CallStatic<bool>("isUsb");
+            if (isUsb)
+                ReportEvent(1011);
+            bool isSimCard = p.CallStatic<bool>("isSimcard");
+            ReportEvent(1012, null, null, isSimCard ? 1 : 0);
+        }
+    }
+
 
     void CashOutLog(string log, bool IsError = false, bool IsOk = false) //提现相关功能日志
     {
