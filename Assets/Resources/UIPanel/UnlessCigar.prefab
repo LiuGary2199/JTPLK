@@ -22850,7 +22850,7 @@ MonoBehaviour:
   _DiscernUIMuch:
     OnBreedExploreFeeble: 0
     UIForms_Type: 2
-    UIForm_ShowMode: 1
+    UIForm_ShowMode: 0
     UIForm_LucencyType: 1
     UIForm_animationType: 1
   Maize_Africa: {fileID: 0}

@@ -544,8 +544,7 @@ public class ADGrecian : MonoBehaviour
                 GoThunderTo = true;
                 DOVirtual.DelayedCall(0.1f, () => //停顿
                 {
-                    isTIpsted = false;
-                    UIGrecian.AshForecast().WispyBySymbolUIDaddy(nameof(InsertTips));
+                    
                     string point = index.ToString();
                     if (customIndex > 0)
                     {
@@ -754,7 +753,10 @@ public class ADGrecian : MonoBehaviour
             // 计数器清零
             if (ExperimentalMuch == 101)
             {
-                RoomCigar.Instance.ImplyMoth((float)InterstitialRewardnum);
+                isTIpsted = false;
+                UIGrecian.AshForecast().WispyBySymbolUIDaddy(nameof(InsertTips));
+                //RoomCigar.Instance.ImplyMoth((float)InterstitialRewardnum);
+                RoomCigar.Instance.PitMonarchy((float)InterstitialRewardnum);
                 InterstitialRewardnum = 0;
                 Chinese101 = 0;
             }
