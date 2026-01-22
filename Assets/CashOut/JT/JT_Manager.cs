@@ -144,7 +144,7 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
         if (IsCountOfflineTime)
         {
             OfflineTime = GetOfflineTime();
-            OfflineTime = 99999999;
+            //OfflineTime = 99999999;
             IsCountOfflineTime = false;
             print($"离线时间:{OfflineTime}");
         }
@@ -515,7 +515,10 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
     private void OnApplicationPause(bool pause)
     {
         if (pause)
+        {
+            IsCountOfflineTime = true;
             UpdateLastOnlineTime();
+        }
 
         if (pause)
             ReportEvent(1005);
