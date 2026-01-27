@@ -176,6 +176,7 @@ public class JT_CardItem : MonoBehaviour
             if (NowMoney < CardData.NeedMoney)
             {
                 SashNewlyBroker.AshForecast().VastNewly(JT_Manager.AshForecast().Translate("Not Enough Money"));
+                UIGrecian.AshForecast().EvenUIDaddy(nameof(Exalt), JT_Manager.AshForecast().Translate("Not Enough Money"));
                 return;
             }
         }
@@ -188,6 +189,7 @@ public class JT_CardItem : MonoBehaviour
         }
 
         // 开启卡片 开始做任务
+      
         JT_Manager.AshForecast().OpenCardAndSetTask(CardData.NeedMoney == 0, CardData);
         CardData = JT_Manager.AshForecast().CheckNextTask(CardData);
         JT_Manager.AshForecast().UpdateCash_ItemDataList(CardData);
@@ -197,9 +199,22 @@ public class JT_CardItem : MonoBehaviour
         if (CardData.NeedMoney > 0)
         {
             if (CardData.NeedMoneyType == "JT_Money1")
+            {
+                int opencard = PlayerPrefs.GetInt("OpenCard1016", 0);
+                opencard += 1;
+                PlayerPrefs.SetInt("OpenCard1016", opencard);
+                SashNewlyBroker.AshForecast().VastNewly("1016", opencard.ToString());
                 SashNewlyBroker.AshForecast().VastNewly("1402", JT_Manager.AshForecast().JT_Money1.ToString("F2"), "1");
-            else if (CardData.NeedMoneyType == "JT_Money2")
+
+            }
+            else if (CardData.NeedMoneyType == "JT_Money2") 
+            {
+                int OpenCard1020 = PlayerPrefs.GetInt("OpenCard1020", 0);
+                OpenCard1020 += 1;
+                PlayerPrefs.SetInt("OpenCard1020", OpenCard1020);
+                SashNewlyBroker.AshForecast().VastNewly("1020", OpenCard1020.ToString());
                 SashNewlyBroker.AshForecast().VastNewly("1402", JT_Manager.AshForecast().JT_Money2.ToString("F2"), "1");
+            }
         }
         else
             SashNewlyBroker.AshForecast().VastNewly("1402", JT_Manager.AshForecast().JT_Money1.ToString("F2"), "0");

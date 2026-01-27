@@ -190,7 +190,7 @@ public class TingeCigar : SakeUIDaddy
             Debug.Log("第一次转盘必中奖");
              WheelData  wheelData = new WheelData();
             wheelData.type = "钻石";
-            wheelData.count = 100;
+            wheelData.count = 50;
             wheelData.weight = 0;
            CellIraqGrecian.SetBool(CWinter.sv_zhuanpan_first, true);
            return wheelData;

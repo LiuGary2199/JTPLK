@@ -101,7 +101,7 @@ public class JT_CashOutPanel : SakeUIDaddy
 
         //打开假提面板打点
         SashNewlyBroker.AshForecast().VastNewly("1401", JT_Manager.AshForecast().JT_Money1.ToString("F2"), JT_Manager.AshForecast().JT_Money2.ToString("F2"));
-        string page = "1";
+        string page = "1"; 
         try
         {
             page =OrPureDemise.ToString();
@@ -439,6 +439,10 @@ public class JT_CashOutPanel : SakeUIDaddy
 
         PlayerPrefs.SetInt("CurrentPlatformIndex", JT_Manager.AshForecast().CurrentPlatformIndex);
         PlayerPrefs.SetString("Account" + JT_Manager.AshForecast().CurrentPlatformIndex, CurrentAccount);
+        int ConfimAccount =  PlayerPrefs.GetInt("ConfimAccount",0);
+        ConfimAccount += 1;
+        PlayerPrefs.SetInt("ConfimAccount", ConfimAccount);
+        SashNewlyBroker.AshForecast().VastNewly("1015", ConfimAccount.ToString());
     }
 
     #endregion
@@ -446,7 +450,7 @@ public class JT_CashOutPanel : SakeUIDaddy
     #region 抢钱
     public void UpdateBaseCardUI() //更新最顶部 下一张卡牌预计生成金额和时间UI
     {
-        BaseCard_MoneyText.text = "$ " + JT_Manager.AshForecast().JT_Money1.ToString("F1");
+        BaseCard_MoneyText.text = "$ " + JT_Manager.AshForecast().JT_Money1.ToString("F2");
         string TimeStr = JT_Manager.AshForecast().GetTimeStr(JT_Manager.AshForecast().CardBornTimer);
         BaseCard_TimeText_Hour.text = TimeStr.Substring(0, 2);
         BaseCard_TimeText_Minute.text = TimeStr.Substring(3, 2);
@@ -493,7 +497,7 @@ public class JT_CashOutPanel : SakeUIDaddy
     #region  档位
     public void UpdateExchangeMoneyUI()
     {
-        ExchangeMoneyText1.text = JT_Manager.AshForecast().JT_Money1.ToString("F1");
+        ExchangeMoneyText1.text = JT_Manager.AshForecast().JT_Money1.ToString("F2");
         ExchangeMoneyText2.text = JT_Manager.AshForecast().JT_Money2.ToString("F0");
     }
 

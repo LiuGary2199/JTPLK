@@ -286,7 +286,13 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
                         CardData.CompletedTaskNum++;
                         // 完成所有任务 移入订单页
                         if (CardData.CompletedTaskNum >= TaskGroupIndexsList[CardData.TaskGroupIndex].Count)
+                        {
+                            int MoveToOrder1019 = PlayerPrefs.GetInt("MoveToOrder1019", 0);
+                            MoveToOrder1019 += 1;
+                            PlayerPrefs.SetInt("MoveToOrder1019", MoveToOrder1019);
+                            SashNewlyBroker.AshForecast().VastNewly("1019", MoveToOrder1019.ToString());
                             MoveToOrder(CardData);
+                        }
                         else // 还有任务 继续做任务
                             CheckNextTask(CardData);
                     }
@@ -312,7 +318,13 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
                         ExchangeItemData.CompletedTaskNum++;
                         // 完成所有任务 移入订单页
                         if (ExchangeItemData.CompletedTaskNum >= TaskGroupIndexsList[ExchangeItemData.TaskGroupIndex].Count)
+                        {
+                            int MoveToOrder1023 = PlayerPrefs.GetInt("MoveToOrder1023", 0);
+                            MoveToOrder1023 += 1;
+                            PlayerPrefs.SetInt("MoveToOrder1023", MoveToOrder1023);
+                            SashNewlyBroker.AshForecast().VastNewly("1023", MoveToOrder1023.ToString());
                             MoveToOrder(ExchangeItemData);
+                        }
                         else // 还有任务 继续做任务
                             CheckNextTask(ExchangeItemData);
                     }
@@ -381,7 +393,7 @@ public class JT_Manager : ObeySubstrate<JT_Manager>
         return CardData;
     }
 
-    void MoveToOrder(JT_CardItemData CardData, bool IsQueue = false) //移入订单页
+    void MoveToOrder(JT_CardItemData CardData, bool IsQueue = false) // 
     {
         // 任务完成后 加入订单列表
         JT_OrderItemData OrderItemData = new JT_OrderItemData();

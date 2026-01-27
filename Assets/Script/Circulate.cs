@@ -56,7 +56,7 @@ public class Circulate : MonoBehaviour
             else
             {
                 GlassyDrug.text = "";
-                GlassyDrugcash.text = Reward.ToString();
+                GlassyDrugcash.text = Reward.ToString("F2");
                 GlassyDrugcash.gameObject.SetActive(true);
             }
             CapeDarn.gameObject.SetActive(Much == RewardType.Coin);

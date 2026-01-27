@@ -28,7 +28,7 @@ public class InsertTips : SakeUIDaddy
 
     public void InitData(double num)
     {
-        rewardText.text = num.ToString("F1");
+        rewardText.text = num.ToString("F2");
     }
     public override void Hidding()
     {

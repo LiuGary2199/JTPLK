@@ -217,7 +217,7 @@ public class VisualizeConformity : MonoBehaviour
     public static void AshMagentaDrugShoe(float Value, Vector2 Pos)
     {
         Text MagentaDrug= ObjectPool.Instance.Get("加钻文字").GetComponent<Text>();
-        MagentaDrug.text = Value.ToString();
+        MagentaDrug.text = Value.ToString("F2");
         MagentaDrug.transform.SetParent(UIGrecian.AshForecast()._TieMatrix);
         MagentaDrug.transform.position = Pos;
         MagentaDrug.transform.localScale = Vector3.zero;

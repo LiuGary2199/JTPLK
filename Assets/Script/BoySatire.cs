@@ -28,7 +28,7 @@ public class BoySatire : MonoBehaviour
         if (WedSoulHue.Instance._RoomIraq.fly_bubble != null && WedSoulHue.Instance._RoomIraq.fly_bubble.destroy_time > 0)
             AnimTime = (int)(WedSoulHue.Instance._RoomIraq.fly_bubble.destroy_time * 0.5f);
         SteepBuy = GameConfig.Instance.CountReward(RewardType.Diamond, (float)WedSoulHue.Instance._RoomIraq.fly_bubble.multi);
-        UnlessDrug.text = SteepBuy.ToString("F1");
+        UnlessDrug.text = SteepBuy.ToString("F2");
         gameObject.SetActive(true);
         //左上→右上
         transform.localPosition = new Vector3(-BoyX, NetY, 0);

@@ -253,8 +253,16 @@ public class GameConfig : MonoBehaviour
         }
         else
         {
-            if (IsUseRandom)
-                return (float)System.Math.Round(BaseDiamond * Multi  * GetCashInitMulti() * Random.Range(BaseDiamondRandomMin, BaseDiamondRandomMax), 1);
+            if (IsUseRandom) 
+            {
+                float a = BaseDiamond;
+                float b = Multi;
+                double c = GetCashInitMulti();
+                float d = BaseDiamondRandomMin;
+                float e = BaseDiamondRandomMax;
+                float f = Random.Range(BaseDiamondRandomMin, BaseDiamondRandomMax);
+                return (float)System.Math.Round(BaseDiamond * Multi * GetCashInitMulti() * Random.Range(BaseDiamondRandomMin, BaseDiamondRandomMax),2);
+            }
             else
                 return (float)System.Math.Round(BaseDiamond * Multi, 1);
         }

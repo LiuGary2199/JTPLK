@@ -221,7 +221,7 @@ public class RoomCigar : SakeUIDaddy
         CapeDrug.text = CapeBuy.ToString();
 
         MothBuy = ZJT_Manager.AshForecast().GetMoney();
-        MothDrug.text = MothBuy.ToString("F1");
+        MothDrug.text = MothBuy.ToString("F2");
 
         //掉球按钮EventTrigger添加事件
         EventTrigger.Entry entry = new EventTrigger.Entry { eventID = EventTriggerType.PointerDown };
@@ -842,7 +842,7 @@ public class RoomCigar : SakeUIDaddy
     public void ImplyMoth(float Cash)
     {
         ZJT_Manager.AshForecast().AddMoney(Cash, "JT_Money1");
-        MothDrug.text = ZJT_Manager.AshForecast().GetMoney().ToString("F1");
+        MothDrug.text = ZJT_Manager.AshForecast().GetMoney().ToString("F2");
     }
     public void ImplyCape(int Coin)
     {
@@ -897,8 +897,8 @@ public class RoomCigar : SakeUIDaddy
     public void PitHomeUnlessAnWhaleTall(float Diamond) // 疯狂模式不直接加钱 统计数量
     {
         WagonMagentaBuyAnWhaleTall += Diamond;
-        WagonMagentaBuyAnWhaleTall = (float)System.Math.Round(WagonMagentaBuyAnWhaleTall, 1);
-        WagonMagentaBuyAnWhaleTallDrug.text = WagonMagentaBuyAnWhaleTall.ToString();
+        WagonMagentaBuyAnWhaleTall = (float)System.Math.Round(WagonMagentaBuyAnWhaleTall, 2);
+        WagonMagentaBuyAnWhaleTallDrug.text = WagonMagentaBuyAnWhaleTall.ToString("F2");
     }
 
     void SaltPitSteep(int Coin) //审模式下假UI加钱
@@ -918,7 +918,7 @@ public class RoomCigar : SakeUIDaddy
             float TempDiamond = PlayerPrefs.GetFloat("TempDiamond");
             TempDiamond += Diamond;
             PlayerPrefs.SetFloat("TempDiamond", TempDiamond);
-            SaltMagentaDrug.text = TempDiamond.ToString("F1");
+            SaltMagentaDrug.text = TempDiamond.ToString("F2");
         }
     }
 
@@ -1928,7 +1928,7 @@ public class RoomCigar : SakeUIDaddy
     #endregion
     void Newly1()
     {
-        MothDrug.text = ZJT_Manager.AshForecast().GetMoney().ToString("F1");
+        MothDrug.text = ZJT_Manager.AshForecast().GetMoney().ToString("F2");
         print("刷新游戏内UI  货币量显示  购买按钮变灰等等");
     }
     void Newly2()
