@@ -82,13 +82,13 @@ public class Home : MonoBehaviour
             case ItemType.Diamond:
                 HotImply = GameConfig.Instance.HitCount_Diamond;
                 MagentaStorm.color = Color.white;
-                HotUnlessBuy = GameConfig.Instance.CountReward(RewardType.Diamond, GameConfig.Instance.DiamondHitReward);
+                HotUnlessBuy = GameConfig.Instance.CountReward(RewardType.Diamond, GameConfig.Instance.CoinHitReward);
                 TooUnlessBuy = HotUnlessBuy * 2;
                 break;
             case ItemType.BigDiamond:
                 HotImply = GameConfig.Instance.HitCount_BigDiamond;
                 MagentaStorm.color = Color.white;
-                HotUnlessBuy = GameConfig.Instance.CountReward(RewardType.Diamond, GameConfig.Instance.DiamondHitReward);
+                HotUnlessBuy = GameConfig.Instance.CountReward(RewardType.Diamond, GameConfig.Instance.CoinHitReward);
                 HotUnlessBuy *= 5;
                 TooUnlessBuy = HotUnlessBuy * 2;
                 break;
