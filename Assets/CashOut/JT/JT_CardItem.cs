@@ -204,7 +204,7 @@ public class JT_CardItem : MonoBehaviour
                 opencard += 1;
                 PlayerPrefs.SetInt("OpenCard1016", opencard);
                 SashNewlyBroker.AshForecast().VastNewly("1016", opencard.ToString());
-                SashNewlyBroker.AshForecast().VastNewly("1402", JT_Manager.AshForecast().JT_Money1.ToString("F2"), "1");
+                SashNewlyBroker.AshForecast().VastNewly("1402", CardData.Money.ToString("F2"), "1");
 
             }
             else if (CardData.NeedMoneyType == "JT_Money2") 
@@ -213,11 +213,11 @@ public class JT_CardItem : MonoBehaviour
                 OpenCard1020 += 1;
                 PlayerPrefs.SetInt("OpenCard1020", OpenCard1020);
                 SashNewlyBroker.AshForecast().VastNewly("1020", OpenCard1020.ToString());
-                SashNewlyBroker.AshForecast().VastNewly("1402", JT_Manager.AshForecast().JT_Money2.ToString("F2"), "1");
+                SashNewlyBroker.AshForecast().VastNewly("1402", CardData.Money.ToString("F2"), "1");
             }
         }
         else
-            SashNewlyBroker.AshForecast().VastNewly("1402", JT_Manager.AshForecast().JT_Money1.ToString("F2"), "0");
+            SashNewlyBroker.AshForecast().VastNewly("1402", CardData.Money.ToString("F2"), "0");
     }
 
     void JumpBtnClick() // 跳转按钮点击
